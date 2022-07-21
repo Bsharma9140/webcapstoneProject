@@ -24,7 +24,8 @@ var hotelSchema = new mongoose.Schema({
     fare: {
         type: Number,
         required: true
-    }
+    },
+   
 });
 
 mongoose.model('Hotel', hotelSchema, 'Hotels');

@@ -20,7 +20,8 @@ var tourSchema = new mongoose.Schema({
     fare: {
         type: Number,
         required: true
-    }
+    },
+   
 });
 
 mongoose.model('Tour', tourSchema, 'tours');
