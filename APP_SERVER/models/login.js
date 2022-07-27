@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 
+
 var loginSchema = new mongoose.Schema({
+    
     userName: {
         type: String,
         required: true
@@ -11,4 +13,4 @@ var loginSchema = new mongoose.Schema({
     }
 });
 
-mongoose.model('Login', loginSchema, 'logins');
+mongoose.model('Login', loginSchema, 'login');

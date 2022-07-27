@@ -29,7 +29,7 @@ var userSchema = new mongoose.Schema({
     postalCode: {
         type: Number,
         required: true
-    }
+    },
 });
 
 mongoose.model('User', userSchema, 'users');
