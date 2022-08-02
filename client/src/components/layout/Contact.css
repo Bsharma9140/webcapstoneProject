@@ -1,0 +1,451 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;  
+  }
+  /*main*/
+  main{
+      background-color: #FFFFFF;
+  }
+  main .upper_main{
+      text-align: center;
+  }
+  main .upper_main h2{
+      padding-top: 30px;
+      padding-bottom: 20px;
+      font-size: 50px;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+  }
+  main .upper_main p{
+      font-size: 14px;
+      line-height: 35px;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      color: #777;
+  }
+  main .form_content{
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  
+  
+  main .form_content .left{
+      width: 40%;
+      background-color: rgba(255, 232, 223, 1);
+      color: black;
+      height: 500px;
+      line-height: 25px;
+  }
+  main .form_content .left .address{
+    padding-top: 40px;
+  }
+  main .form_content .left .phone{
+    padding-top: 20px;
+  }
+  main .form_content .left .email{
+    padding-top: 20px;
+  }
+  main .form_content .left::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  main .form_content .left .detail{
+    margin: 14px;
+    text-align: center;
+  }
+  main .form_content .left .detail i{
+    font-size: 30px;
+    color: rgba(47, 143, 133, 1);
+    margin-bottom: 10px;
+  }
+  main .form_content .left .detail .topic{
+      font-size: 20px;
+      font-weight: bold;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+  }
+  main .form_content .left .detail .text-one,
+  main .form_content .left .detail .text-two{
+    font-size: 14px;
+  }
+  main .form_content .right{
+      width: 60%;
+      background-color: rgba(88, 134, 130, 1);
+      height: 500px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 30px;
+  }
+  .right .full-name{
+    padding-top: 10px;
+  }
+  .right .email-address{
+    padding-top: 10px;;
+  }
+  .right .message-box{
+    padding-top: 10px;;
+  }
+  
+  main .form_content .right .topic-text{
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      
+  }
+  main .form_content .right .input-box{
+      height: 50px;
+      width: 100%;
+      margin: 12px 0;
+      padding-bottom: 10px;
+      min-height: 60px; 
+      margin-bottom: 25px;
+  }
+  main .form_content .right label{   
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 14px;
+  }
+  main .form_content .right .input-box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 10px;   
+    resize: none;
+  }
+  
+  main .form_content .right .message-box{
+    min-height: 130px;
+  }
+  main .form_content .right .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  main .form_content .right .button input[type="button"]{
+      color: black;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      height:35px;
+      border-radius: 6px;
+      background: #F0F1F8;
+      cursor: pointer;
+      width: 100px;
+      font-weight: bold;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      margin-top: 15px;
+  }
+  main .form_content .right[type="button"]:hover{
+    background: #f5886c;
+  }
+  
+  main .picture_content{
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 5px;
+  }
+  main .picture_content .box{
+      width: 33%;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+  /* https://www.pexels.com/photo/aerial-photography-of-elizabeth-tower-london-1837591/ */
+  #image1{
+      background-image: url(../../images/pexels-oleg-magni-1837591.jpg);
+      height:70vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+  }
+  /* https://pixabay.com/photos/beach-marine-water-travel-relax-4967176/ */
+  #image2{
+     background-image: url(../../images/beach-4967176_1920.jpg);
+      height:70vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+  }
+  /* https://pixabay.com/photos/copenhagen-denmark-architecture-4052654/ */
+  #image3{
+      background-image: url(../../images/copenhagen-4052654_1920.jpg);
+      height:70vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+  }
+  /* https://pixabay.com/photos/venice-grand-canal-sunset-italy-6489813/ */
+  
+  #image4{
+      background-image: url(../../images/venice-6489813_1920.jpg);
+      height:70vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+  }
+  /* https://www.pexels.com/photo/sea-landscape-beach-relaxation-4614183/ */
+  #image5{
+      background-image: url(../../images/pexels-merlijn-vekeman-4614183.jpg);
+      height:70vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+  }
+  /* https://pixabay.com/photos/paris-montmartre-france-city-4546007/ */
+  #image6{
+      background-image: url(../../images/paris-4546007_1920.jpg);
+      height:70vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+  }
+  main .bottom_main{    
+      padding-top: 5px;
+      width: 100%;
+  }
+  
+  /* https://www.pexels.com/photo/white-and-brown-concrete-building-beside-body-of-water-near-snow-capped-rocky-mountain-under-clear-blue-sky-2089799/ */
+  #bottom_image{
+      background-image: url(../../images/pexels-r-fera-2089799.jpg);
+      height:80vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center; 
+      padding: 0px 0px;
+      display:flex;
+      align-items:stretch;  
+      font-size:1.2em;
+      padding-top: 50px; 
+      padding-left: 100px;
+  }
+  #bottom_image > div{
+      background-color:rgba(0,0,0,0.6);
+      padding:20px 10px;
+      margin-top: 80px;
+      margin-bottom: 220px;
+      margin-left: 0;
+      margin-right: 600px;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      color: #eee;
+      font-size: 20px;
+      text-align: justify;
+      line-height: 35px;
+  }
+  
+  
+  /*footer*/
+  footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #111;
+  }
+  footer .content{
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 40px;
+  }
+  footer .content p,a{
+      color: #eee;
+      font-size: 14px;
+  }
+  footer .content .box{
+      width: 33%;
+      transition: all 0.4s ease;
+  }
+  footer .content .topic{
+      font-size: 18px;
+      font-weight: 600;
+      color: #f5886c;
+      margin-bottom: 16px;
+  }
+  
+  footer .content .upper p{
+      line-height: 30px;
+      font-size: 14px;
+  }
+  
+  footer .content .lower .phone{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower .email{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    background: #FF6347;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #f5886c;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color: #f5886c;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+  }
+  .content .media-icons a:hover{
+    border-color: #f5886c;
+  }
+  footer .bottom{
+      width: 100%;
+      text-align: right;
+      color: #d9d9d9;
+      padding: 0 40px 5px 0;
+      font-size: 13px;
+  }
+  footer .bottom a{
+      color: #f5886c;
+      font-size: 13px;
+  }
+  
+  footer a:hover{
+    color: #f5886c;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #toggle-icon {
+      display: block;
+    }
+    #toggle-icon i {
+      font-size: 1.7em;
+    }
+    nav {
+      display: none;
+      width: 100%;
+    }
+    nav ul li {
+      text-align: center;
+      padding: 5px 1rem;
+      width: 100%;
+    }
+    nav ul {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+    #banner_msg{
+      left: 40%;
+      transform: translate(-30%, -50%);
+  }
+  
+  h1{
+      font-size: 2em;
+  }
+  
+    #bottom_image > div{
+      padding:30px 10px;
+      margin-top: 100px;
+      margin-bottom: 520px;
+      margin-left: 0;
+      margin-right: 180px;
+    }
+    footer .content .box{
+      width: 75%;
+    }
+    footer .content .middle{
+      padding-left: 0px;
+      margin-top: 30px;
+    }
+    footer .content .right{
+      margin-top: 30px;
+    }   
+    main .form_content{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    main .form_content .box{
+        width: 100%;
+    }
+    main .form_content .right{
+        margin-top: 30px;
+    }
+    main .picture_content{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    main .picture_content .box{
+      width: 100%;
+    }
+    main .picture_content .middle{
+      margin-top: 30px;
+    }
+    main .picture_content .right{
+      margin-top: 30px;
+    }  
+  }
+  
+  
+  

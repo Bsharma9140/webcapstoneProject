@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+   font-family: Tahoma, Arial, sans-serif;   
+  }
+  body{
+       background-color: #eee;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+  }
+  
+  /* https://www.pexels.com/photo/photo-of-seaside-during-daytime-3511543/ */
+  #banner {
+    background-image: url(../../images/pexels-bekir-donmez-3511543.jpg);
+    height:100vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  
+  nav {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0.8em;  
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 10px;
+  }
+  
+  nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: #777;
+  }
+  
+  
+  nav li:hover {
+    background-color: #f5886c;
+  }
+  #toggle-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 50px;
+    display: none;
+  }
+  
+  .container {
+      margin: 4em;
+      border-radius: 15px;
+      overflow: hidden;
+  }
+  #banner_msg{
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-10%, -50%);
+      color: white;
+      background-color:rgba(0,0,0,0.5);
+      padding: 25px;
+  }
+  
+  h1{
+      text-align: justify;
+      font-size: 25px;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      line-height: 35px;
+  }
+  
+  /*main*/
+  main{
+      width: 100%;
+      background-color: #FFFFFF;
+      
+  }
+  main h2{
+      font-size: 50px;
+      text-align: center;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      
+     
+  }
+  main .main_content{
+    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+      
+  
+      
+  }
+  main .main_content .box{
+    width: 47%;
+      background-color: gray;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+  main .main_content .box{
+    width: 47%;
+      background-color: #202020;
+      color: #FFFFFF;
+  }
+  main .main_content .box p{
+    padding-left: 20px;
+      padding-right: 20px;
+      
+      padding-bottom: 30px;
+      line-height: 30px;
+      text-align: justify;
+      font-size: 14px;
+      color: #eee;
+  }
+  main .main_content .box h3{
+    padding: 20px;
+      padding-top: 30px;
+      
+      line-height: 10px;
+      font-size: 20px;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+  }
+  main .main_content .box a{
+    color:#f5886c;
+  }
+  main a:hover{
+    color: #f5886c;
+  }
+  
+  /* https://pixabay.com/photos/banff-alberta-canada-landscape-4331689/ */
+  #canada_image{
+     background-image: url(../../images/banff-4331689_1920.jpg);
+    height:50vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  
+  /* https://www.pexels.com/photo/view-of-river-572689/ */
+  #newzealand_image{
+     background-image: url(../../images/pexels-tyler-lastovich-572689.jpg);
+    height:50vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  /* https://www.pexels.com/photo/a-beautiful-scenery-3601421/ */
+  #maldives_image{
+     background-image: url(../../images/pexels-asad-photo-maldives-3601421.jpg);
+    height:50vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  
+  /* https://www.pexels.com/photo/high-angle-view-of-cityscape-against-cloudy-sky-313782/ */
+  #newyork_image{
+     background-image: url(../../images/pexels-quintin-gellar-313782.jpg);
+    height:50vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  
+  /* https://www.pexels.com/photo/train-passing-773471/ */
+  #switzerland_image{
+     background-image: url(../../images/pexels-h-emre-773471.jpg);
+    height:50vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  
+  /* https://pixabay.com/photos/canal-boats-buildings-reflection-5488271/ */
+  #amsterdam_image{
+    background-image: url(../../images/canal-5488271_1920.jpg);
+    height:50vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  
+  
+  
+  main .middle_portion{
+    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  main .middle_portion .box{
+    width: 47%;
+      border-radius: 5px;
+      overflow: hidden;
+      
+  }
+  
+  /* https://www.pexels.com/photo/woman-making-peace-hand-sign-while-sitting-on-rock-boulder-2407472/ */
+  #box1_image{
+     background-image: url(../../images/pexels-vincent-nestyapradhana-2407472.jpg);
+    height:70vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+  }
+  main .middle_portion .box{
+    width: 47%;
+      
+      color: black;
+  }
+  main .middle_portion .box p{
+    padding-left: 20px;
+      padding-right: 20px;
+      
+      padding-bottom: 30px;
+      line-height: 30px;
+      text-align: justify;
+      font-size: 14px;
+      color: #777;
+  }
+  main .middle_portion .box h3{
+    padding: 20px;
+      padding-top: 10px;
+      
+      line-height: 10px;
+      font-size: 20px;
+      
+  }
+  main .middle_portion .box a{
+    color:#f5886c;
+  }
+  main .middle_portion .right h3{
+    line-height: 30px;
+      padding-bottom: 0;
+      text-align: justify;
+     
+  }
+  main .middle_portion .right p{
+    padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: justify;
+  }
+  main a:hover{
+    color: #f5886c;
+  }
+  
+  main .bottom_main{
+       padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      width: 100%;
+  }
+  
+  /* https://pixabay.com/photos/channel-venice-gondolas-italy-3547224/ */
+  #bottom_image{
+      background-image: url(../../images/channel-3547224_19201.jpg);
+      height:80vh;
+      background-repeat: no-repeat;
+      position: relative;    
+      background-size:cover;
+      background-position:center;    
+      display:flex;
+      align-items:stretch;  
+      font-size:1.2em;
+      padding-top: 50px; 
+      padding-left: 100px;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+  
+  #bottom_image > div{
+      background-color:rgba(0,0,0,0.6);
+      padding:20px 10px;
+      margin-top: 20px;
+      margin-bottom: 280px;
+      margin-left: 300px;
+      margin-right: 50px;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      color: #eee;
+      font-size: 20px;
+      text-align: justify;
+      line-height: 35px;
+  }
+  
+  
+  /*footer*/
+  footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #111;
+  }
+  footer .content{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      padding-left: 40px;
+  }
+  footer .content p,a{
+    color: #eee;
+      font-size: 14px;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 18px;
+    font-weight: 600;
+    color: #f5886c;
+    margin-bottom: 16px;
+  
+  }
+  
+  footer .content .upper p{
+   line-height: 30px;
+      font-size: 14px;
+  }
+  
+  footer .content .lower .phone{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower .email{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    background: #FF6347;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #f5886c;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color: #f5886c;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    
+  }
+  .content .media-icons a:hover{
+    border-color: #f5886c;
+  }
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+      font-size: 13px;
+  }
+  footer .bottom a{
+      color: #f5886c;
+      font-size: 13px;
+  }
+  
+  footer a:hover{
+    color: #f5886c;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #toggle-icon {
+      display: block;
+    }
+    #toggle-icon i {
+      font-size: 1.7em;
+    }
+    nav {
+      display: none;
+      width: 100%;
+    }
+    nav ul li {
+      text-align: center;
+      padding: 5px 1rem;
+      width: 100%;
+    }
+    nav ul {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+    #banner_msg{
+      left: 35%;
+  }
+  
+      #bottom_image > div{
+      padding:30px 10px;
+      margin-top: 80px;
+      margin-bottom: 530px;
+      margin-left: 0;
+      margin-right: 80px;
+     
+  }
+  
+      footer .content .box{
+      width: 75%;
+    }
+    footer .content .middle{
+      padding-left: 0px;
+      margin-top: 30px;
+    }
+    footer .content .right{
+      margin-top: 30px;
+    }  
+    main .main_content .box{
+      width: 100%;
+    }
+    main .main_content .right{
+      margin-top: 30px;
+    }
+      main .middle_portion .box{
+      width: 100%;
+    }
+    main .middle_portion .right{
+      margin-top: 30px;
+    }
+  
+  }
+  
+  
+  
