@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faYoutube, faFacebook, faTwitter, faLinkedin, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import './Footer.css';
 
 
@@ -7,44 +11,49 @@ class Footer extends Component {
     return (
         <div>
             <footer>
-                <div class="content">
-                    <div class="left box">
-                        <div class="upper">
-                            <div class="topic">Contact Details</div>
-                            <p>Travel Tourism</p>
-                            <p>3242, Mississauga, ON, Canada</p>
-                        </div>
-                        <div class="lower">
-                            <div class="phone">
-                            <a href="#"><i class="fas fa-phone-volume"></i>888-888-8888</a>
-                            </div>
-                            <div class="email">
-                            <a href="#"><i class="fas fa-envelope"></i>tour@travel.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="middle box">
-                        <div class="topic">Useful Links</div>
-                        
-                    </div>
-                    <div class="right box">
-                        <div class="topic">Subscribe us</div>
-                        
-                            <div class="media-icons">
-                            <a link="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                            <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        
-                    </div>
-                    
+          <div class="content">
+            <div class="left box">
+              <div class="upper">
+                <div class="topic">Contact Details</div>
+                <p>TRAVELVIO</p>
+                <p>3252 Kariya Drive, Mississauga, ON, Canada</p>
+              </div>
+              <div class="lower">
+                <div class="phone">
+                  <a href="#"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> &nbsp; +1 888-888-8888</a>
                 </div>
-                <div class="bottom">
-                    <p>Copyright © 2022 <a>Travel Tourism</a> All rights reserved</p>
+                <div class="email">
+                  <a href="#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> &nbsp; travelvio@gmail.com</a>
                 </div>
-            </footer>
+              </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Useful Links</div>
+                <div><Link to="/home">Home</Link></div>
+                <div><Link to="/about">About Us</Link></div>
+                <div><Link to="/hotel">Hotels</Link></div>
+                <div><Link to="/tour">Tours</Link></div>
+                <div><Link to="/contact">Contact</Link></div>
+            </div>
+            <div class="right box">
+              <div class="topic">Subscribe us</div>
+              <form action="#">
+                <input type="text" placeholder="Enter email address"></input>
+                <input type="submit" name="" value="Send"></input>
+                <div class="media-icons">
+                  <a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a>
+                  <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
+                  <a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a>
+                  <a href="https://www.youtube.com/"><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></a>
+                  <a href="https://in.linkedin.com/"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+                </div>
+                </form>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Copyright © 2022 <Link to="/home">Travelvio</Link> All rights reserved</p>
+          </div>
+        </footer>
         </div>
     );
   }

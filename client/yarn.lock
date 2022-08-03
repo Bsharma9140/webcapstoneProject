@@ -5967,8 +5967,12 @@
   "resolved" "file:.."
   "version" "1.0.0"
   dependencies:
+    "@emotion/react" "^11.9.3"
+    "@emotion/styled" "^11.9.3"
+    "@mui/material" "^5.9.2"
     "bcryptjs" "^2.4.3"
     "body-parser" "^1.18.3"
+    "bootstrap" "^5.2.0"
     "concurrently" "^4.0.1"
     "express" "^4.16.4"
     "is-empty" "^1.2.0"

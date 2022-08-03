@@ -8,7 +8,7 @@ class Home extends Component {
     
       <div>
       <main>
-          <h2>Welcome to Travel & Tourism</h2>
+          <h2>Welcome to Travelvio</h2>
           <div class="main_content">
             <div class="left box">
               <div id="canada_image"></div>
