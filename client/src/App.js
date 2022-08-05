@@ -14,8 +14,12 @@ import Testimonals from "./components/layout/Testimonals";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import Recommend from "./components/layout/Recommend";
 import './App.css';
+import Hotels from "./components/layout/Hotels";
 class App extends Component {
+
   render() {
+    const pathname = window.location.pathname;
+   console.log(pathname,'location')
     return (
       <Provider store={store}>
         <Router>
@@ -28,12 +32,14 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-  
-            <Services />
+            <Route exact path="/hotels" component={Hotels} />
+            { (pathname==='/home' || pathname==='/')?
+            <><Services />
             <Recommend />
-            <Testimonals />
-            <Footer />
+            <Testimonals /></>
+            : <></>}
             
+            <Footer />
           </div>
         </Router>
       </Provider>

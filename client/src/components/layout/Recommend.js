@@ -87,7 +87,7 @@ export default function Recommend() {
         {data.map((destination) => {
           return (
             <div className="destination">
-              <img src={require("../../assets/Destination1.png")} alt="" />
+              <img src={destination.image} alt="" />
               <h3>{destination.title}</h3>
               <p>{destination.subTitle}</p>
               <div className="info">

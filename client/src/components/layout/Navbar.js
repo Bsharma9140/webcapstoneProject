@@ -33,6 +33,9 @@ export default function Navbar() {
             <a href="#recommend">Places</a>
           </li>
           <li>
+            <a href="/hotels">Hotels</a>
+          </li>
+          <li>
             <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
