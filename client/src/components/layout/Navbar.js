@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.png";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 export default function Navbar() {
@@ -10,7 +10,7 @@ export default function Navbar() {
       <Nav>
         <div className="brand">
           <div className="container">
-            <img src="../../assets/logo.png" alt="" />
+            <img src={require("../../assets/logo.png")} alt="" />
             Travelo
           </div>
           <div className="toggle">
