@@ -1,88 +1,163 @@
-import React, { Component } from "react";
-import './Home.css';
+import React from "react";
+import styled from "styled-components";
 
-
-class Home extends Component {
-  render() {
-    return (
-    
-      <div>
-      <main>
-          <h2>Welcome to Travelvio</h2>
-          <div class="main_content">
-            <div class="left box">
-              <div id="canada_image"></div>
-              <h3>CANADA</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat.  <a href="#">Read more...</a></p>
-            </div>
-            <div class="right box">
-              <div id="newzealand_image"></div>
-              <h3>NEW ZEALAND</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat.  <a href="#">Read more...</a></p>
-            </div>
+export default function Home() {
+  return (
+    <Section id="hero">
+      <div className="background">
+        <img src={require("../../images/pexels-bekir-donmez-3511543.jpg")} alt="" />
+      </div>
+      <div className="content">
+        <div className="title">
+          <h1>Time to Travel</h1>
+        </div>
+        <div className="search">
+          <div className="container">
+            <label htmlFor="">Where you want to go</label>
+            <input type="text" placeholder="Search Your location" />
           </div>
-          <div class="main_content">
-            <div class="left box">
-              <div id="maldives_image"></div>
-              <h3>MALDIVES</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat.  <a href="#">Read more...</a></p>
-            </div>
-            <div class="right box">
-              <div id="newyork_image"></div>
-              <h3>NEW YORK CITY</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat.  <a href="#">Read more...</a></p>
-            </div>
+          <div className="container">
+            <label htmlFor="">Check-in</label>
+            <input type="date" />
           </div>
-            
-          <div class="middle_portion">
-            <div class="left box">
-              <div id="box1_image"></div>
-            </div>
-            <div class="right box">
-              <h3>WE PROMISE OUTSTANDING ADVENTURE TRAVEL EXPERIENCES FOR PEOPLE WITH AN ADVENTUROUS SPIRIT.</h3>
-              <p>Every active travel experience Boundless Journeys creates is complemented by signature accommodation,
-                regional cuisine, and remarkable local guides who can show you the greatest hits and hidden gems of each
-                destination. No matter where you want to go—or what you want to do—Boundless Journeys delivers unique,
-                flexible, and exclusive travel at its best.</p>
-              <h3>SO, WHAT ARE YOU IN THE MOOD FOR?</h3>
-            </div>
+          <div className="container">
+            <label htmlFor="">Check-out</label>
+            <input type="date" />
           </div>
-            
-          <div class="main_content">
-            <div class="left box">
-              <div id="switzerland_image"></div>
-              <h3>SWITZERLAND</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat.  <a href="#">Read more...</a></p>
-            </div>
-            <div class="right box">
-              <div id="amsterdam_image"></div>
-              <h3>AMSTERDAM</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat.  <a href="#">Read more...</a></p>
-            </div>
-          </div>
-            
-          <div class="bottom_main">
-            <div id="bottom_image">
-              <div>
-                <p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit ”</p>
-              </div>
-            </div>
-          </div>
-        </main></div>
-    );
-  }
+          <button>Explore Now</button>
+        </div>
+      </div>
+    </Section>
+  );
 }
 
-export default Home;
+const Section = styled.section`
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+
+  .background {
+    height: 100%;
+    img {
+      width: 100%;
+      filter: brightness(60%);
+      border-radius: 2rem;
+    }
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .title {
+      color: white;
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+        font-family: Bradley Hand, cursive;
+      }
+      p {
+        text-align: center;
+        padding: 0 30vw;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+      }
+    }
+    .search {
+      display: flex;
+      background-color: #ffffffce;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 1.5rem;
+        label {
+          font-size: 1.1rem;
+          color: #03045e;
+        }
+        input {
+          background-color: transparent;
+          border: none;
+          text-align: center;
+          color: black;
+          &[type="date"] {
+            padding-left: 3rem;
+          }
+
+          &::placeholder {
+            color: black;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      button {
+        padding: 1rem;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        border: none;
+        color: white;
+        background-color: #FC5B62;
+        border: 2px solid #FC5B62;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background-color: black;
+          color: #FC5B62;
+          border: 2px solid #FC5B62;
+          
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 980px) {
+    height: 25rem;
+    .background {
+      background-color: palegreen;
+      img {
+        height: 100%;
+      }
+    }
+    .content {
+      .title {
+        h1 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.8rem;
+          padding: 1vw;
+        }
+      }
+      .search {
+        flex-direction: column;
+        padding: 0.8rem;
+        gap: 0.8rem;
+        /* padding: 0; */
+        .container {
+          padding: 0 0.8rem;
+          input[type="date"] {
+            padding-left: 1rem;
+          }
+        }
+        button {
+          padding: 1rem;
+          font-size: 1rem;
+        }
+        /* display: none; */
+      }
+    }
+  }
+`;

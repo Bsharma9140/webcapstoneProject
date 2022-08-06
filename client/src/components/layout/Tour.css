@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+     
+  }
+ 
+  main{
+      
+      background-color: #FFFFFF;
+  }
+  main h2{
+      text-align: center;
+  }
+  
+  /*Plan Your Trip Page*/
+  
+  
+  main .traveltips{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 40px;
+      
+  }
+  
+  main .traveltips h1{
+      text-align: center;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      
+  }
+  main .traveltips p{
+      text-align: center;
+  }
+  main .traveltips-col{
+      flex-basis: 15%;
+      border-radius: 10px;
+      margin-bottom: 2%;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  main .traveltips-col img{
+      width: 80%;
+      height:50%;
+      border-radius: 10px;
+  }
+  main .traveltips-col p{
+      padding: 0;
+      margin-top: 1px;
+      text-align: center;
+  }
+  main .traveltips-col h3{
+      margin-top: 10px;
+      margin-bottom: 15px;
+      text-align: center; 
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+  main .traveltips_row{
+      width: 80%;
+      margin-top: 2%;
+      padding-left: 20%;
+      display: flex;
+      justify-content:space-around;
+  }
+  
+  main .Practicalities{
+      text-align: center;
+      margin-top: 10px;;
+      
+  }
+  main .Practicalities h1{
+      text-align: center;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      
+  }
+  main .Practicalities_row{
+      
+      
+     
+     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  
+  main .Practicalities-col{
+      width: 24%;
+     
+      overflow: hidden;
+  }
+  
+  /*--Experiences start*/
+  main .Experiences{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-top: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  main h1{
+      font-size: 36px;
+      font-weight: 600;
+      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+  }
+  main h4{
+      color: #777;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+     align-content: center;
+     
+  }
+  main p{
+      color: #777;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+     align-content: center;
+      text-align: justify;
+      
+  }
+  
+  
+  
+  main .Experiences_row{
+      margin-top: 3%;
+      display: flex;
+      justify-content: space-between;
+  }
+  main .Experiences-col{
+      flex-basis: 31%;
+      background: #fff3f3;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.5s;
+  }
+  
+  main h3{
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+  }
+  main .Experiences-col:hover{
+      box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+      
+  }
+  /*--Experiences end*/
+  
+  /*iternaries start*/
+  <!--iternaries-->
+  main .iternaries{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-top: 15px;
+      
+  }
+  
+  main .iternaries h1{
+      text-align: center;
+  }
+  main .iternaries p{
+      text-align: center;
+  }
+  main .iternaries_col{
+      flex-basis: 32%;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+  }
+  main .iternaries_col img{
+      
+  width: 100%;
+      display: block;
+  }
+  main .layer{
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      transition: 0.5s;
+  }
+  main .layer:hover{
+      background: rgba(226,0,0,0.7);
+  }
+  main .layer h3{
+      width: 100%;
+      font-weight: 500;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  main .layer:hover h3{
+      bottom: 49%;
+      opacity: 1;
+  }
+  main .iternaries_row{
+      width: 100%;
+      align-content: center;
+      margin-top: 3%;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  
+  /*iternaries end*/
+  
+  
+  
+  
+    /*tablet version*/
+  @media screen and (max-width: 768px) {
+    #toggle-icon {
+      display: block;
+    }
+    #toggle-icon i {
+      font-size: 1.7em;
+    }
+    nav {
+      display: none;
+      width: 100%;
+    }
+    nav ul li {
+      text-align: center;
+      padding: 5px 1rem;
+      width: 100%;
+    }
+    nav ul {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+      
+    #banner_msg{
+      top: 87%;
+      left: 20%;
+  }
+     
+  
+  
+      main .traveltips{
+     align-content: flex-start;
+          text-align: center;
+      
+      
+  }
+     main .traveltips_row{
+      width: 80%;
+          
+      display: block;
+      
+  }
+      main .Practicalities-col{
+      width: 100%;
+      
+      text-align: center;
+          padding-bottom: 30px;
+      
+  }
+      main .Practicalities-col img{
+      width: 100%;
+      height:70%;
+      
+        
+  }
+  
+      main h1{
+          padding-top: 20px;
+      }
+      main .Experiences h1{
+          padding-bottom: 20px;
+          padding-top: 0;
+      }
+     
+      main .Experiences_row{
+           width: 100%;
+          
+          justify-content: center;
+      margin-top: 2%;
+         
+         
+          
+         display: block;
+  }
+     main .iternaries_row{
+           width: 100%;
+          
+      margin-top: 2%;
+          
+         display: block;
+  }
+     main p{
+      color: #777;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+          padding-left: 30px;
+   
+          
+     text-align: justify;
+      
+      
+  }
+      
+    
+  main h4{
+      color: #777;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+     align-content: center;
+     
+  }
+    footer .content .box{
+      width: 75%;
+    }
+    footer .content .middle{
+      padding-left: 0px;
+      margin-top: 30px;
+    }
+    footer .content .right{
+      margin-top: 30px;
+    }
+      
+  
+  }
+  
+  

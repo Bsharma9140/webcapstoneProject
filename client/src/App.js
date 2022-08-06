@@ -9,22 +9,39 @@ import Login from "./components/auth/Login";
 import Footer from "./components/layout/Footer";
 import Contact from "./components/layout/Contact";
 import About from "./components/layout/About";
+import Services from "./components/layout/Services";
+import Testimonals from "./components/layout/Testimonals";
+import ScrollToTop from "./components/layout/ScrollToTop";
+import Recommend from "./components/layout/Recommend";
 import './App.css';
+import Hotels from "./components/layout/Hotels";
+import Tour from "./components/layout/Tour";
 class App extends Component {
+
   render() {
+    const pathname = window.location.pathname;
+   console.log(pathname,'location')
     return (
       <Provider store={store}>
         <Router>
           <div className="App">
+            <ScrollToTop />
             <Navbar />
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/tour" component={Tour} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            <Footer />
+            <Route exact path="/hotels" component={Hotels} />
+            { (pathname==='/home' || pathname==='/')?
+            <><Services />
+            <Recommend />
+            <Testimonals /></>
+            : <></>}
             
+            <Footer />
           </div>
         </Router>
       </Provider>

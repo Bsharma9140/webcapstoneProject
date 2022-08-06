@@ -1,127 +1,191 @@
-import { fontFamily, fontSize } from "@mui/system";
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import './Navbar.css';
+import React, { useState } from "react";
+import styled from "styled-components";
 
-class Navbar extends Component {
-  render() {
-    return (
-      <div className="navbar-pre-fixed">
-        <nav>
-        <div className="row">
-        <div className="col s4">
-              <Link
-                to="/home"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px",
-                  fontFamily: "monospace",
-                  fontWeight: "bold",
-                  fontSize: "25px"
-                }}
-                className="black-text"
-              >
-                TRAVELVIO
-              </Link>
-              </div>
-        <div className="col s1">
-              <Link
-                to="/home"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="black-text"
-              >
-                Home
-              </Link>
-              </div>
-              <div className="col s1">
-              <Link
-                to="/about"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="black-text"
-              >
-                About
-              </Link>
-              </div>
-              <div className="col s1">
-              <Link
-                to="/hotel"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="black-text"
-              >
-                Hotels
-              </Link>
-              </div>
-              <div className="col s1">
-              <Link
-                to="/tour"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="black-text"
-              >
-                Tours
-              </Link>
-              </div>
-              <div className="col s1">
-              <Link
-                to="/contact"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="black-text"
-              >
-                Contact
-              </Link>
-              </div>
-              <div className="col s1">
-              <Link
-                to="/login"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="black-text"
-              >
-                LogIn
-              </Link>
-              </div>
-              <div className="col s1">
-              <Link
-                to="/register"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-              >
-                Register
-              </Link>
-             
-            </div>
-            </div>
-        </nav>
-      </div>
-    );
-  }
+import { GiHamburgerMenu } from "react-icons/gi";
+import { VscChromeClose } from "react-icons/vsc";
+export default function Navbar() {
+  const [navbarState, setNavbarState] = useState(false);
+  return (
+    <>
+      <Nav>
+        <div className="brand">
+          <div className="container">
+            <img src={require("../../assets/logo.png")} alt="" />
+            Travelvio
+          </div>
+          <div className="toggle">
+            {navbarState ? (
+              <VscChromeClose onClick={() => setNavbarState(false)} />
+            ) : (
+              <GiHamburgerMenu onClick={() => setNavbarState(true)} />
+            )}
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            <a href="home">HOME</a>
+          </li>
+          <li>
+            <a href="/about">ABOUT</a>
+          </li>
+          <li>
+            <a href="/tour">TOURS</a>
+          </li>
+          <li>
+            <a href="/hotels">HOTELS</a>
+          </li>
+          <li>
+            <a href="/contact">CONTACT</a>
+          </li>
+          
+        </ul>
+        <ul>
+          <a href="/login"><button >Login</button></a>
+          <a href="/register"><button >Register</button></a>
+        </ul>
+      </Nav>
+      <ResponsiveNav state={navbarState}>
+        <ul>
+          <li>
+            <a href="home" onClick={() => setNavbarState(false)}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/about" onClick={() => setNavbarState(false)}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="/tour" onClick={() => setNavbarState(false)}>
+             Tour
+            </a>
+          </li>
+          <li>
+            <a href="/hotels" onClick={() => setNavbarState(false)}>
+              Hotel
+            </a>
+          </li>
+          <li>
+            <a href="/contact" onClick={() => setNavbarState(false)}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </ResponsiveNav>
+    </>
+  );
 }
 
-export default Navbar;
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .brand {
+    .container {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1.2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .toggle {
+      display: none;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 550;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          color: #FC5B62;
+        }
+      }
+      }
+    }
+  }
+  button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    background-color: #FC5B62;
+    border: 2px solid #FC5B62;
+  
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: black;
+          color: #FC5B62;
+          border: 2px solid #FC5B62;
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .toggle {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+    }
+    button {
+      display: none;
+    }
+  }
+`;
+
+const ResponsiveNav = styled.div`
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: ${({ state }) => (state ? "50px" : "-400px")};
+  background-color: white;
+  height: 30vh;
+  width: 100%;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  ul {
+    list-style-type: none;
+    width: 100%;
+    li {
+      width: 100%;
+      margin: 1rem 0;
+      margin-left: 2rem;
+
+      a {
+        text-decoration: none;
+        color: #0077b6;
+        font-size: 1.2rem;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          color: #023e8a;
+        }
+      }
+      &:first-of-type {
+        a {
+          color: #023e8a;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+`;
