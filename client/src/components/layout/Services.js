@@ -51,6 +51,7 @@ export default function Services() {
 
 const Section = styled.section`
   padding: 5rem 0;
+  font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -62,6 +63,11 @@ const Section = styled.section`
     background-color: #FC5B6215;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s ease-in-out;
+    p {
+      text-align: justify;
+      font-size: 14px;
+      line-height: 25px;
+    }
     &:hover {
       transform: translateX(0.4rem) translateY(-1rem);
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

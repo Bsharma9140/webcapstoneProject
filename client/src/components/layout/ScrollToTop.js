@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.png";
+import logo from "../../images/logo1.png";
 export default function ScrollToTop() {
   const [scrollState, setScrollState] = useState(false);
   const toTop = () => {
@@ -27,6 +27,6 @@ const ToTop = styled.div`
     height: 1.5rem;
   }
   border-radius: 2rem;
-  background-color: #1900ff39;
+  background-color: black;
   padding: 1rem;
 `;

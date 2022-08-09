@@ -10,7 +10,7 @@ export default function Navbar() {
       <Nav>
         <div className="brand">
           <div className="container">
-            <img src={require("../../assets/logo.png")} alt="" />
+            <img src={require("../../images/logo1.png")} alt="" />
             Travelvio
           </div>
           <div className="toggle">
@@ -86,12 +86,18 @@ const Nav = styled.nav`
     .container {
       cursor: pointer;
       display: flex;
-      justify-content: center;
+   
       align-items: center;
       gap: 0.4rem;
       font-size: 1.2rem;
       font-weight: 900;
       text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      img {
+        height: 15%;
+        width: 15%;
+        padding-left: 0px;
+      }
     }
     .toggle {
       display: none;
@@ -99,15 +105,19 @@ const Nav = styled.nav`
   }
   ul {
     display: flex;
-    gap: 1rem;
+     
+    gap: 2rem;
     list-style-type: none;
+    letter-spacing: 0.1rem;
+    padding-right: 2rem;
     li {
       a {
         text-decoration: none;
+      
         color: black;
         font-size: 1.2rem;
         font-weight: 550;
-        transition: 0.1s ease-in-out;
+        transition: 0.2s ease-in-out;
         &:hover {
           color: #FC5B62;
         }
@@ -117,6 +127,7 @@ const Nav = styled.nav`
   }
   button {
     padding: 0.5rem 1rem;
+    
     cursor: pointer;
     border-radius: 1rem;
     border: none;

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Destination1 from "../../assets/Destination1.png";
-import Destination2 from "../../assets/Destination2.png";
-import Destination3 from "../../assets/Destination3.png";
-import Destination4 from "../../assets/Destination4.png";
-import Destination5 from "../../assets/Destination5.png";
-import Destination6 from "../../assets/Destination6.png";
+import Destination1 from "../../images/canadaN.jpg";
+import Destination2 from "../../images/newzealandN.jpg";
+import Destination3 from "../../images/maldivesN.jpg";
+import Destination4 from "../../images/newyorkN.jpg";
+import Destination5 from "../../images/switzerlandN.jpg";
+import Destination6 from "../../images/amsterdamN.jpg";
 import info1 from "../../assets/info1.png";
 import info2 from "../../assets/info2.png";
 import info3 from "../../assets/info3.png";
@@ -15,73 +15,44 @@ export default function Recommend() {
     {
       image: Destination1,
       title: "CANADA",
-      subTitle: "Canada is a country filled with famous landmarks, historical wonders, ",
-      cost: "$ 4,500",
-      duration: "Approx 2 night trip",
+      subTitle: "The expanse of Canada's natural beauty, from mountains and glaciers to secluded lakes and forests, is almost unparalleled worldwide. But Canada's allure is not just the great outdoors. Canada has cosmopolitan cities that are... ",
     },
     {
       image: Destination2,
       title: "NEW ZEALAND",
-      subTitle: "A small island nation home to around 4.5 million people located in the Pacific Ocean,",
-      cost: "$ 5,500",
-      duration: "Approx 2 night trip",
+      subTitle: "New Zealand is one of the most sought-after destinations in the world. With its snow-capped mountains, ancient glaciers, rolling hills, and copious amounts of wine, it's a destination unlike all others. Tucked away in the corner of the world,...",
     },
     {
       image: Destination3,
       title: "MALDIVES",
-      subTitle: "The Maldives, a collection of more than a thousand islands in the Indian Ocean,",
-      cost: "$ 4,900",
-      duration: "Approx 2 night trip",
+      subTitle: "The island nation of the Maldives is popular with honeymooners looking for seclusion and adventurers looking to explore the depths of the sea on a. Travelers seeking relaxation can unwind at one of the island spas,...",
     },
     {
       image: Destination4,
       title: "NEW YORK",
-      subTitle: "New York is a city of diversity and dynamism. It is also a city of",
-      cost: "$ 6,700",
-      duration: "Approx 1 night trip",
+      subTitle: "As the most populous city in the U.S. – set at the forefront of food, fashion and the arts – NYC requires stamina. But don't let the Big Apple's frenetic sights and sounds intimidate you from soaking up its grandeur...",
     },
     {
       image: Destination5,
       title: "SWITZERLAND",
-      subTitle: "Switzerland is a small mountainous country located in central Europe.",
-      cost: "$ 6,300",
-      duration: "Approx 2 night 2 day trip",
+      subTitle: "Switzerland is a landlocked country in Central Europe. It has borders with France to the west, Italy to the south, Austria and Liechtenstein to the east and Germany to the north. The climate is temperate, but varies with altitude...",
     },
     {
       image: Destination6,
       title: "AMSTERDAM",
-      subTitle: "Amsterdam, the city famous for its romantic canals, bridges, bicycles",
-      cost: "$ 7,100",
-      duration: "Approx 3 night 2 day trip",
+      subTitle: "Amsterdam is as pretty as a postcard with charm in spades. It's also one of the rare places that attracts history buffs, luxury-minded travelers, couples seeking romance and backpackers alike. Besides its cultural attractions, such as",
     },
   ];
 
-  const packages = [
-    "The Weekend Break",
-    "The Package Holiday",
-    "The Group Tour",
-    "Long Term Slow Travel",
-  ];
 
   const [active, setActive] = useState(1);
   return (
     <Section id="recommend">
       <div className="title">
-        <h2>Recommended Destinations</h2>
+        <h2>TOP DESTINATIONS</h2>
       </div>
       <div className="packages">
-        <ul>
-          {packages.map((pkg, index) => {
-            return (
-              <li
-                className={active === index + 1 ? "active" : ""}
-                onClick={() => setActive(index + 1)}
-              >
-                {pkg}
-              </li>
-            );
-          })}
-        </ul>
+        
       </div>
       <div className="destinations">
         {data.map((destination) => {
@@ -92,14 +63,12 @@ export default function Recommend() {
               <p>{destination.subTitle}</p>
               <div className="info">
                 <div className="services">
-                  <img src={info1} alt="" />
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
+                  
                 </div>
                 <h4>{destination.cost}</h4>
               </div>
               <div className="distance">
-                <span>1000 Kms</span>
+               
                 <span>{destination.duration}</span>
               </div>
             </div>
@@ -112,8 +81,14 @@ export default function Recommend() {
 
 const Section = styled.section`
   padding: 2rem 0;
+  font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
   .title {
     text-align: center;
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      font-family: Bradley Hand, cursive;
+    }
   }
   .packages {
     display: flex;
@@ -149,8 +124,18 @@ const Section = styled.section`
         transform: translateX(0.4rem) translateY(-1rem);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
+      h3 {
+        letter-spacing: 0.1rem;
+      }
+      p {
+        font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 25px;
+      }
       img {
         width: 100%;
+        border-radius: 0.5rem;
       }
       .info {
         display: flex;
