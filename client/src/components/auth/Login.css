@@ -11,3 +11,6 @@
 .row {
     background-color: #ffffff;
 }
+.custom-link a{
+    color: black !important;
+}
