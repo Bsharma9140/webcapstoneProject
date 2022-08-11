@@ -4,6 +4,17 @@
     margin: 0;
     font-family: Tahoma, Arial, sans-serif;  
   }
+  .background3 {
+  
+    margin-top: 2rem;
+ }
+ .background3 img {
+       width: 100%;
+       height: 70vh;
+       filter: brightness(80%);
+       border-radius: 2rem;
+ }
+
   /*main*/
   main{
       background-color: #FFFFFF;
@@ -12,16 +23,20 @@
       text-align: center;
   }
   main .upper_main h2{
-      padding-top: 30px;
+      padding-top: 20px;
       padding-bottom: 20px;
-      font-size: 50px;
-      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      
+      font-size: 4rem;
+        letter-spacing: 0.2rem;
+        font-family: Bradley Hand, cursive;
   }
   main .upper_main p{
       font-size: 14px;
-      line-height: 35px;
+      line-height: 15px;
       font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      text-align: center;
       color: #777;
+      
   }
   main .form_content{
       margin: auto;
@@ -36,10 +51,11 @@
   
   main .form_content .left{
       width: 40%;
-      background-color: rgba(255, 232, 223, 1);
-      color: black;
-      height: 500px;
+      background-color: black;
+      color: #eee;
+      height: 520px;
       line-height: 25px;
+      padding-top: 25px;
   }
   main .form_content .left .address{
     padding-top: 40px;
@@ -73,18 +89,19 @@
       font-size: 20px;
       font-weight: bold;
       font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+      color: #FC5B62;
   }
   main .form_content .left .detail .text-one,
   main .form_content .left .detail .text-two{
     font-size: 14px;
   }
   main .form_content .right{
-      width: 60%;
-      background-color: rgba(88, 134, 130, 1);
-      height: 500px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 30px;
+    width: 60%;
+    background-color: #FC5B6215;
+    height: 520px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
   }
   .right .full-name{
     padding-top: 10px;
@@ -97,35 +114,40 @@
   }
   
   main .form_content .right .topic-text{
-      font-size: 20px;
-      font-weight: bold;
-      color: black;
-      font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
       
   }
   main .form_content .right .input-box{
-      height: 50px;
-      width: 100%;
-      margin: 12px 0;
-      padding-bottom: 10px;
-      min-height: 60px; 
-      margin-bottom: 25px;
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    padding-bottom: 20px;
+    min-height: 65px; 
+    margin-bottom: 25px;
   }
   main .form_content .right label{   
-      display: inline-block;
-      margin-bottom: 10px;
-      font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+   
+    font-size: 18px;
+    width: 100%;
+    font-family: Georgia;
   }
   main .form_content .right .input-box input{
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 12px;
-    background: #F0F1F8;
-    border-radius: 6px;
-    padding: 0 10px;   
-    resize: none;
+    height: 130%;
+  width: 70%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  background: #eee;
+  border-radius: 6px;
+  padding-left: 30px;
+  padding: 0 10px;   
+  resize: none;
+  border: 2px solid black;
   }
   
   main .form_content .right .message-box{
@@ -256,6 +278,27 @@
       line-height: 35px;
   }
   
+  .btn4 {
+    padding: 0.5rem 1rem;
+    margin-top: 50px;
+    
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: #FC5B62;
+    border: 2px solid #FC5B62;
+  width: 150px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.btn4:hover {
+    color: #FC5B62;
+    border: 2px solid #FC5B62;
+    background-color: black;
+}
   
   
   

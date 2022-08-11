@@ -1,0 +1,172 @@
+.background2 {
+  
+    margin-top: 2rem;
+ }
+ .background2 img {
+       width: 100%;
+       height: 70vh;
+       filter: brightness(80%);
+       border-radius: 2rem;
+ }
+
+.custom-link a{
+    color: black !important;
+    font-size: 16px;
+    font-style: italic;
+    
+}
+
+main .form_content2{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+main .form_content2 .left{
+    width: 40%;
+    background-color: rgba(255, 232, 223, 1);
+    color: black;
+    height: 650px;
+    line-height: 25px;
+    background-image: url(../../images/pexels-paul-volkmer-3079710.jpg);
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+    filter: brightness(70%);
+}
+
+main .form_content2 .right{
+    width: 60%;
+    background-color: #FC5B6215;
+    height: 650px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+main .form_content2 .right .address{
+    line-height: 30px;
+}
+.right .full-name{
+  padding-top: 10px;
+}
+.right .email-address{
+  padding-top: 10px;;
+}
+.right .message-box{
+  padding-top: 10px;;
+}
+
+main .form_content2 .right .topic-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+    padding-top: 20px;
+    
+}
+main .form_content2 .right .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    padding-bottom: 20px;
+    min-height: 65px; 
+    margin-bottom: 25px;
+}
+main .form_content2 .right .input-box .red-text{
+    font-size: 12px;
+    padding-left: 10px;
+    color:red;
+}
+main .form_content2 .right label{   
+    display: inline-block;
+    margin-bottom: 15px;
+   
+    font-size: 18px;
+    width: 100%;
+    font-family: Georgia;
+}
+main .form_content2 .right .input-box input{
+    height: 130%;
+    width: 60%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: #eee;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding: 0 10px;   
+    resize: none;
+    border: 2px solid black;
+}
+
+main .form_content2 .right .message-box{
+  min-height: 130px;
+}
+
+main .picture_content{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+main .picture_content .box{
+    width: 33%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.btn2 {
+    padding: 0.5rem 1rem;
+    margin-top: 40px;
+    
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: #FC5B62;
+    border: 2px solid #FC5B62;
+  width: 150px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.btn2:hover {
+    color: #FC5B62;
+    border: 2px solid #FC5B62;
+    background-color: black;
+}
+@media screen and (max-width: 768px) {
+    main .form_content2{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    main .form_content2 .box{
+        width: 100%;
+    }
+    main .form_content2 .right{
+        margin-top: 30px;
+    }
+    main .picture_content{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    main .picture_content .box{
+      width: 100%;
+    }
+    main .picture_content .middle{
+      margin-top: 30px;
+    }
+    main .picture_content .right{
+      margin-top: 30px;
+    }  
+  }
+ 
