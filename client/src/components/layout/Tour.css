@@ -4,6 +4,16 @@
     font-family: Tahoma, Arial, sans-serif;
      
   }
+  .backgroundTour {
+  
+    margin-top: 2rem;
+ }
+ .backgroundTour img {
+       width: 100%;
+       height: 70vh;
+       filter: brightness(70%);
+       border-radius: 2rem;
+ }
  
   main{
       

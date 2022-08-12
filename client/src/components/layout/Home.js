@@ -24,7 +24,7 @@ export default function Home() {
             <label htmlFor="">Check-out</label>
             <input type="date" />
           </div>
-          <button>Explore Now</button>
+          <button class="btnHome">Explore Now</button>
         </div>
       </div>
     </Section>
@@ -75,12 +75,15 @@ const Section = styled.section`
       display: flex;
       background-color: #ffffffce;
       padding: 0.5rem;
+      height: 80px;
       border-radius: 0.5rem;
       .container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 10px;
+        
         padding: 0 1.5rem;
         label {
           font-size: 1.1rem;
@@ -103,7 +106,7 @@ const Section = styled.section`
           }
         }
       }
-      button {
+      .btnHome {
         padding: 1rem;
         cursor: pointer;
         border-radius: 0.3rem;
@@ -113,6 +116,7 @@ const Section = styled.section`
         border: 2px solid #FC5B62;
         font-size: 1.1rem;
         text-transform: uppercase;
+        height: 60px;
         transition: 0.3s ease-in-out;
         &:hover {
           background-color: black;

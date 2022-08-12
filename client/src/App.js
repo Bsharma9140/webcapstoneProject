@@ -16,6 +16,7 @@ import Recommend from "./components/layout/Recommend";
 import './App.css';
 import Hotels from "./components/layout/Hotels";
 import Tour from "./components/layout/Tour";
+import Checkout from "./components/layout/Checkout";
 class App extends Component {
 
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/hotels" component={Hotels} />
+            <Route exact path="/checkout" component={Checkout} /> 
             { (pathname==='/home' || pathname==='/')?
             <><Services />
             <Recommend />

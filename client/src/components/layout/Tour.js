@@ -11,7 +11,9 @@ class Tour extends Component {
             <div>
                 
                 <main>
-            
+                <div className="backgroundTour">
+        <img src={require("../../images/pexels-nubia-navarro-nubikini-386009.jpg")} alt="" />
+      </div>
            
     <section class="traveltips">
         <h1>TRAVEL TIPS</h1>

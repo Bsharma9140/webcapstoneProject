@@ -38,6 +38,9 @@ export default function Navbar() {
           <li>
             <a href="/contact">CONTACT</a>
           </li>
+          <li>
+            <a href="/checkout">CHECKOUT</a>
+          </li>
           
         </ul>
         <ul>
@@ -70,6 +73,11 @@ export default function Navbar() {
           <li>
             <a href="/contact" onClick={() => setNavbarState(false)}>
               Contact
+            </a>
+          </li>
+          <li>
+            <a href="/checkout" onClick={() => setNavbarState(false)}>
+              Checkout
             </a>
           </li>
         </ul>
@@ -115,7 +123,7 @@ const Nav = styled.nav`
         text-decoration: none;
       
         color: black;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 550;
         transition: 0.2s ease-in-out;
         &:hover {

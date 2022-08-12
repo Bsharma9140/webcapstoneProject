@@ -6,9 +6,7 @@ import Destination3 from "../../images/maldivesN.jpg";
 import Destination4 from "../../images/newyorkN.jpg";
 import Destination5 from "../../images/switzerlandN.jpg";
 import Destination6 from "../../images/amsterdamN.jpg";
-import info1 from "../../assets/info1.png";
-import info2 from "../../assets/info2.png";
-import info3 from "../../assets/info3.png";
+
 
 export default function Recommend() {
   const data = [
