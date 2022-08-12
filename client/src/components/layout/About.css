@@ -1,0 +1,165 @@
+.backgroundAbout {
+  
+    margin-top: 2rem;
+ }
+ .backgroundAbout img {
+       width: 100%;
+       height: 70vh;
+       filter: brightness(70%);
+       border-radius: 2rem;
+ }
+
+.title h3{
+
+    padding-top: 20px;
+      padding-bottom: 20px;
+      
+      font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+        font-family: Bradley Hand, cursive;
+
+ }
+
+ .about_main h2{
+    padding-top: 20px;
+      padding-bottom: 20px;
+      
+      font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        font-family: Bradley Hand, cursive;
+
+ }
+ main .middle_portion{
+  
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  main .middle_portion .box{
+    width: 47%;
+      border-radius: 1rem;
+      overflow: hidden;
+      
+  }
+  
+  /* https://www.pexels.com/photo/woman-making-peace-hand-sign-while-sitting-on-rock-boulder-2407472/ */
+  #box1_image{
+     background-image: url(../../images/pexels-vincent-nestyapradhana-2407472.jpg);
+    height:70vh;
+    background-repeat: no-repeat;
+    position: relative;    
+    background-size:cover;
+    background-position:center; 
+    
+  }
+  main .middle_portion .box{
+    width: 47%;
+      
+      color: black;
+      
+  }
+  main .middle_portion .box p{
+    padding-left: 20px;
+      padding-right: 20px;
+      
+      padding-bottom: 30px;
+      line-height: 30px;
+      text-align: justify;
+      font-size: 14px;
+      color: #777;
+  }
+  main .middle_portion .box h3{
+    padding: 20px;
+      padding-top: 10px;
+      
+      line-height: 10px;
+      font-size: 20px;
+      
+  }
+  main .middle_portion .box a{
+    color:#f5886c;
+  }
+  main .middle_portion .right h3{
+    line-height: 30px;
+      padding-bottom: 0;
+      text-align: justify;
+     
+  }
+  main .middle_portion .right p{
+    padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: justify;
+  }
+  main .main_content{
+  
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  main .main_content .box{
+    width: 32%;
+    background-color: gray;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  main .main_content .box{
+    width: 32%;
+      background-color: #202020;
+      color: #FFFFFF;
+      box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+  }
+
+#maldives_image{
+    background-image: url(../../images/pexels-red-zeppelin-9854596.jpg);
+   height:70vh;
+   background-repeat: no-repeat;
+   position: relative;    
+   background-size:cover;
+   background-position:center; 
+ }
+ 
+
+ #newyork_image{
+    background-image: url(../../images/pexels-arthouse-studio-4347144.jpg);
+   height:70vh;
+   background-repeat: no-repeat;
+   position: relative;    
+   background-size:cover;
+   background-position:center; 
+ }
+ #newyork_image1{
+    background-image: url(../../images/pexels-alessandro-kelvin-2376268.jpg);
+   height:70vh;
+   background-repeat: no-repeat;
+   position: relative;    
+   background-size:cover;
+   background-position:center; 
+ }
+
+  
+
+
+  @media screen and (max-width: 768px) {
+    
+    main .middle_portion .box{
+    width: 100%;
+  }
+  main .middle_portion .right{
+    margin-top: 30px;
+  }
+  main .main_content .box{
+    width: 100%;
+  }
+  main .main_content .right{
+    margin-top: 30px;
+  }
+
+}
+
+

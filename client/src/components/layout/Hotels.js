@@ -9,6 +9,7 @@ import Destination6 from "../../assets/Destination6.png";
 import info1 from "../../assets/info1.png";
 import info2 from "../../assets/info2.png";
 import info3 from "../../assets/info3.png";
+import './Hotels.css';
 
 export default function Hotels() {
   const data = [
@@ -65,48 +66,54 @@ export default function Hotels() {
 
   const [active, setActive] = useState(1);
   return (
-    <Section id="recommend">
-      <div className="title">
-        <h2>Hotels</h2>
+    <div>
+
+      <div className="backgroundHotel">
+        <img src={require("../../images/pexels-pixabay-258154.jpg")} alt="" />
       </div>
-      <div className="packages">
-        <ul>
-          {packages.map((pkg, index) => {
+      <Section id="recommend">
+        <div className="title">
+          <h2>Hotels</h2>
+        </div>
+        <div className="packages">
+          <ul>
+            {packages.map((pkg, index) => {
+              return (
+                <li
+                  className={active === index + 1 ? "active" : ""}
+                  onClick={() => setActive(index + 1)}
+                >
+                  {pkg}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="destinations">
+          {data.map((destination) => {
             return (
-              <li
-                className={active === index + 1 ? "active" : ""}
-                onClick={() => setActive(index + 1)}
-              >
-                {pkg}
-              </li>
+              <div className="destination">
+                <img src={destination.image} alt="" />
+                <h3>{destination.title}</h3>
+                <p>{destination.subTitle}</p>
+                <div className="info">
+                  <div className="services">
+                    <img src={info1} alt="" />
+                    <img src={info2} alt="" />
+                    <img src={info3} alt="" />
+                  </div>
+                  <h4>{destination.cost}</h4>
+                </div>
+                <div className="distance">
+                  <span>1000 Kms</span>
+                  <span>{destination.duration}</span>
+                </div>
+              </div>
             );
           })}
-        </ul>
-      </div>
-      <div className="destinations">
-        {data.map((destination) => {
-          return (
-            <div className="destination">
-              <img src={destination.image} alt="" />
-              <h3>{destination.title}</h3>
-              <p>{destination.subTitle}</p>
-              <div className="info">
-                <div className="services">
-                  <img src={info1} alt="" />
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
-                </div>
-                <h4>{destination.cost}</h4>
-              </div>
-              <div className="distance">
-                <span>1000 Kms</span>
-                <span>{destination.duration}</span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </Section>
+        </div>
+      </Section>
+    </div>
   );
 }
 
