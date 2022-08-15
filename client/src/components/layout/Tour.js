@@ -84,57 +84,76 @@ class Tour extends Component {
             
           
     <Section id="recommend">
-         <h1>Tour Packages</h1>
-         <p>We have packages through the world</p>
-         <div className="destinations">
-         <div className="destination">
-              <img src={require("../../images/Dubai.jpg")} alt="" />
-              <h3>Internatinal Tour</h3>
-              <p>Singapore</p>
-              <div className="info">
-                <div className="services">
-                  <img src={info1} alt="" />
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
+         <center><h1>Tour Packages</h1></center>
+        
+         <div class="container">
+           
+            <div class="flex">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                
+                   <div class="destination-block">
+                            <div class="desti-img">
+                            <img src={require("../../images/singapore1.jpg")}alt=""></img>
+                                <a href="#" class="desti-title">Singapore</a>
+                                <div class="overlay">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb20 text-white">Singapore</h3>
+                                    <ul class="angle list-none">
+                                        <li>4 Nights / 3 days</li>
+                                        <li>3 Star hotel</li>
+                                        <li>Breakfast and Dinner</li>
+                                    </ul>
+                                    <p class="price">$1599</p>
+                                    <a href="/tour1" class="btn-link">Go for Singapore <i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                        </div>
+                   
                 </div>
-                <h4>50,000</h4>
-         </div>
-            <div className="distance">
-            <span><button type="submit" class="btn-tour">Select</button></span>
-            </div>
-        </div>
-        <div className="destination">
-              <img src={require("../../images/Iternaries_europe_2.jpg")} alt="" />
-              <h3>Internatinal Tour</h3>
-              <p>Europe, Norway, Denmark</p>
-              <div className="info">
-                <div className="services">
-                  <img src={info1} alt="" />
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    
+                   <div class="destination-block">
+                            <div class="desti-img">
+                            <img src={require("../../images/maldives1.jpg")}alt=""></img>
+                                <a href="#" class="desti-title">Maldives</a>
+                                <div class="overlay">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb20 text-white">Maldives</h3>
+                                    <ul class="angle list-none">
+                                        <li>3 Nights / 4 days</li>
+                                        <li>3 Star hotel</li>
+                                        <li>Breakfast and Dinner</li>
+                                    </ul>
+                                    <p class="price">$1499</p>
+                                    <a href="/tour2" class="btn-link">Go for Maldives <i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                        </div>
+                    
                 </div>
-                <h4>50,000</h4>
-         </div>
-            <div className="distance">
-            <span><button type="submit" class="btn-tour">Select</button></span>
-            </div>
-        </div>
-        <div className="destination">
-              <img src={require("../../images/Usa.jpg")} alt="" />
-              <h3>Internatinal Tour</h3>
-              <p>USA,Mexico</p>
-              <div className="info">
-                <div className="services">
-                  <img src={info1} alt="" />
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    
+                   <div class="destination-block">
+                            <div class="desti-img">
+                            <img src={require("../../images/newyork1.jpg")}alt=""></img>
+                                <a href="#" class="desti-title">New York</a>
+                                <div class="overlay">
+                                </div>
+                                <div class="text">
+                                    <h3 class="mb20 text-white">New York</h3>
+                                    <ul class="angle list-none">
+                                        <li>3 Nights / 4 days</li>
+                                        <li>3 Star hotel</li>
+                                        <li>Breakfast and Dinner</li>
+                                    </ul>
+                                    <p class="price">$1899</p>
+                                    <a href="/tour3" class="btn-link">Go for Newyork <i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                        </div>
+                    
                 </div>
-                <h4>50,000</h4>
-         </div>
-            <div className="distance">
-            <span><button type="submit" class="btn-tour">Select</button></span>
+              
             </div>
-        </div>
         </div>
    
     </Section>
