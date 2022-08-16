@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+
 export default function Home() {
   return (
     <Section id="hero">
       <div className="background">
-        <img src={require("../../images/pexels-bekir-donmez-3511543.jpg")} alt="" />
+      <img src={require("../../images/pexels-bekir-donmez-3511543.jpg")} alt="" />
+        
+      
+        
       </div>
       <div className="content">
         <div className="title">
@@ -43,6 +47,13 @@ const Section = styled.section`
       width: 100%;
       filter: brightness(60%);
       border-radius: 2rem;
+    }
+    video{
+      
+        width: 100%;
+        filter: brightness(60%);
+        border-radius: 2rem;
+     
     }
   }
   .content {
@@ -132,6 +143,9 @@ const Section = styled.section`
     .background {
       background-color: palegreen;
       img {
+        height: 100%;
+      }
+      video {
         height: 100%;
       }
     }
