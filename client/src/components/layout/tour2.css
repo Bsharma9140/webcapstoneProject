@@ -1,0 +1,346 @@
+.tour-pageheader1 { width: 100%; height: 70vh; border-radius: 2rem; margin-top: 2rem; background: url(../../images/maldives.jpg) no-repeat; background-position: top center; }
+.tour-rate { color: #fcd55a; padding-right: 15px; }
+.tour-caption { padding-top: 210px; padding-bottom: 102px; }
+.tour-title { font-size: 30px; }
+.tour-caption-text { font-size: 20px; font-weight: 300; margin-bottom: 30px; }
+.slide-thumb-gallery { margin-bottom: 100px; }
+.slide-thumb-gallery img { border-radius: 10px; }
+
+
+.owl-thumb-item img { border-radius: 10px; }
+.owl-thumb-item { background: transparent; border: none; margin-right: 14px; margin-top: 20px; padding: 0px; }
+
+.journey-day-title { border-bottom: 1px solid #e2ded8; padding-bottom: 20px; margin-bottom: 20px; }
+
+.journey-section ul li { color: #121113; }
+
+.included-section ul li { padding-left: 20px; }
+.included-section .arrow li:before { color: #3d0f82; }
+
+.review-block { margin-bottom: 30px; }
+.review-img { float: left; }
+.review-content { padding-left: 90px; }
+.star-rating { color: #e9b914; font-size: 12px; display: inline-block; margin-bottom: 12px; }
+.similar-package { padding-top: 80px; padding-bottom: 80px; }
+
+.support-list ul li { padding-left: 20px; line-height: 36px; font-size: 14px; }
+.support-list li:before { color: #3d0f82; }
+.flex { display : flex; justify-content: center; }
+
+.tour-rate { color: #fcd55a; padding-right: 15px; }
+.maldives .tour-caption { padding-top: 210px; }
+.tour-title { font-size: 54px; }
+.tour-caption-text { font-size: 30px; font-weight: 300; margin-bottom: 30px; }
+.slide-thumb-gallery { margin-bottom: 100px; }
+.slide-thumb-gallery img { border-radius: 10px; }
+.owl-thumb-item img { border-radius: 10px; }
+.owl-thumb-item { background: transparent; border: none; margin-right: 14px; margin-top: 20px; padding: 0px; }
+
+.journey-day-title { border-bottom: 1px solid #e2ded8; padding-bottom: 20px; margin-bottom: 20px; }
+
+.journey-section ul li { color: #121113; }
+
+.included-section ul li { padding-left: 20px; }
+.included-section .arrow li:before { color: #3d0f82; }
+
+.review-block { margin-bottom: 30px; }
+.review-img { float: left; }
+.review-content { padding-left: 90px; }
+.star-rating { color: #e9b914; font-size: 12px; display: inline-block; margin-bottom: 12px; }
+.similar-package { padding-top: 80px; padding-bottom: 80px; }
+
+.support-list ul li { padding-left: 20px; line-height: 36px; font-size: 14px; }
+.support-list li:before { color: #3d0f82; }
+
+
+
+.maldives body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Merriweather Sans', sans-serif; letter-spacing: 0px; font-size: 14px; color: #36333c; font-weight: 400; line-height: 26px; }
+.maldives .wrapper { margin: 0px 41px 41px 41px; }
+.maldives h1, .maldives h2, .maldives h3, .maldives h4, .maldives h5, .maldives h6 { letter-spacing: 0px; font-weight: 300; color:black; margin: 0px 0px 15px 0px; font-family: 'Merriweather Sans', sans-serif; }
+.maldives h1{color: white; }
+.maldives h2 { font-size: 34px; }
+.maldives h3 { font-size: 24px; font-weight: 400; }
+.maldives h4 { font-size: 20px; font-weight: 400; }
+.maldives h5 { font-size: 16px; }
+.maldives h6 { font-size: 14px; }
+.maldives p { margin: 0 0 20px; line-height: 2; }
+.maldives p:last-child { margin: 0px; }
+.h1style {color: white; margin-right: auto;}
+.maldives a { text-decoration: none; color: #121113; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+.maldives a:focus,  .maldives a:hover { text-decoration: none; color: #3d0f82; }
+sub { bottom: 0em; }
+.lead { font-size: 21px; font-weight: 300; line-height: 1.6; font-family: 'Merriweather Sans', sans-serif; color: #36333c; margin-bottom: 20px; }
+.firstcharacter { float: left; font-size: 95px; line-height: 60px; padding-top: 16px; padding-right: 8px; padding-left: 0px; color: #121113; }
+blockquote { padding: 30px; margin: 0 0 30px; font-size: 18px; border: 2px solid #edd818; background-color: transparent; font-weight: 300; color: #121113; line-height: 28px; }
+.blockquote-reverse, blockquote.pull-right { border: 2px solid #edd818; padding: 30px; margin: 0 0 30px; font-size: 18px; }
+
+.blockquote-text { font-family: 'Merriweather Sans', sans-serif; color: #525756; font-weight: 400; font-size: 23px; line-height: 1.6; }
+strong { color: #2e3139; font-weight: 700; }
+hr { border-top: 1px solid #eee; margin-bottom: 40px; margin-top: 40px; }
+.list-none { list-style: none; padding: 0; }
+.search-icon { line-height: 2.6; }
+
+/*-----------------------
+   2 Form Elements:
+-------------------------*/
+
+.control-label { font-size: 14px; text-transform: capitalize; color: #20232b; margin-bottom: 8px; letter-spacing: 0px; font-weight: 400; }
+
+.maldives textarea.form-control { height: 120px; }
+
+.maldives .form-group { margin-bottom: 5px; }
+select.form-control:not([size]):not([multiple]) { height: 70px; }
+.hero-section .form-control { border: 1px solid #8c897d; height: 58px; }
+.maldives .form-control { border-radius: 8px; font-size: 12px; font-weight: 400; width: 100%; height: 70px; padding: 14px 18px; line-height: 1.42857143; border: 1px solid #dedbe3; background-color: #f8f8f9; text-transform: capitalize; letter-spacing: 0px; margin-bottom: 16px; -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075); box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075); -webkit-appearance: none; }
+.maldives .form-control:focus { color: #121113 !important; outline: 0; -webkit-box-shadow: none; box-shadow: none; border-color: #d6dadf; }
+.maldives input::-webkit-input-placeholder { color: #121113 !important; }
+.maldives textarea::-webkit-input-placeholder { color: #121113 !important; }
+.maldives .input-group-addon { background-color: transparent; border: 1px solid #eee; border-radius: 0px; position: absolute; right: 16px; top: 23px; font-size: 12px; }
+.focus { border: 1px solid #d2cfd7; }
+.focus:focus { border: 1px solid #d2cfd7; }
+.has-success .form-control { border-color: #3c763d; background-color: #f8f8f9; box-shadow: none; }
+.has-success .form-control:focus { border-color: #3c763d; outline: 0; -webkit-box-shadow: none; box-shadow: none; }
+.has-error .form-control { border-color: #a94442; background-color: #f8f8f9; box-shadow: none; }
+.has-error .form-control:focus { border-color: #34b2a4; outline: 0; -webkit-box-shadow: none; box-shadow: none; }
+.maldives .input-group-addon:last-child { border-left: 0; border-right: transparent; border-top: transparent; border-bottom: transparent; }
+.maldives .input-group-addon i { color: #0e142e; }
+.maldives .btn-select { font-size: 14px; }
+.maldives select option { margin: 40px; background: rgba(255, 255, 255, 1); color: #7a7f94; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); position: relative; }
+.maldives select.form-control { position: relative; }
+select { border-radius: 0px; font-size: 14px; font-weight: 700; width: 100%; padding: 14px; line-height: 1.42857143; border: 1px solid #e0e5e9; background-color: #fff; text-transform: capitalize; -webkit-appearance: none; -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075); box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075); }
+.select { position: relative; display: block; line-height: 3; overflow: hidden; }
+select { width: 100%; height: 100%; margin: 0; padding: 0 0 0 .5em; cursor: pointer; color: #FFF; font-size: 16px; }
+.select::after { position: absolute; top: 0; right: 0; bottom: 0; padding: 10px 17px 0px 0px; background: transparent; pointer-events: none; font-family: FontAwesome; content: "\f107"; font-size: 16px; }
+.select:hover::after { color: #023981; }
+.select::after { -webkit-transition: .25s all ease; -o-transition: .25s all ease; transition: .25s all ease; }
+select option { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; cursor: pointer; padding: 10px; width: 100%; background-color: #fff; font-family: 'Merriweather Sans', sans-serif; }
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+.default-skin .ui-widget-header { border: 1px solid #e4e7e9; background: #f3f6f8; color: #fff; font-weight: bold; }
+.default-skin .ui-state-highlight, .default-skin .ui-widget-content .ui-state-highlight, .default-skin .ui-widget-header .ui-state-highlight { border: 1px solid #e4e7e9; background: #f3f6f8; color: #fff; }
+
+/*------------------------
+Radio & Checkbox CSS
+-------------------------*/
+input[type=radio].with-font, input[type=checkbox].with-font { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+input[type=radio].with-font~label:before, input[type=checkbox].with-font~label:before { font-family: FontAwesome; display: inline-block; content: "\f1db"; letter-spacing: 10px; font-size: 1.2em; color: #c7c7cd; width: 1.4em; }
+input[type=radio].with-font:checked~label:before, input[type=checkbox].with-font:checked~label:before { content: "\f111"; font-size: 1.2em; color: #300b66; letter-spacing: 5px; }
+input[type=checkbox].with-font~label:before { content: "\f096"; }
+input[type=checkbox].with-font:checked~label:before { content: "\f046"; color: #300b66; }
+
+/*-------------- align ------------*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+.alignnone { margin: 5px 20px 20px 0; }
+.aligncenter, div.aligncenter { display: block; margin: 5px auto 5px auto; }
+.alignright { float: right; margin: 0px 0 20px 30px; border-radius: 8px; }
+.alignleft { float: left; margin: 0px 20px 0px 0; border-radius: 8px; }
+a img.alignright { float: right; margin: 0px 0 30px 30px; }
+a img.alignnone { margin: 5px 20px 20px 0; }
+a img.alignleft { float: left; margin: 5px 20px 20px 0; }
+a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.wp-caption { background: #fff; border: 1px solid #f0f0f0; max-width: 96%;    /* Image does not overflow the content area */ padding: 5px 3px 10px; text-align: center; }
+.wp-caption.alignnone { margin: 5px 20px 20px 0; }
+.wp-caption.alignleft { margin: 5px 20px 20px 0; }
+.wp-caption.alignright { margin: 5px 0 20px 20px; }
+.wp-caption img { border: 0 none; height: auto; margin: 0; max-width: 98.5%; padding: 0; width: auto; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; margin: 0; padding: 0 4px 5px; }
+
+/*-----------------------------------
+   3. Buttons 
+-----------------------------------*/
+.maldives .btn { font-family: 'Merriweather Sans', sans-serif; font-size: 16px; text-transform: capitalize; font-weight: 700; padding: 14px 40px; letter-spacing: 0px; border-radius: 50px; line-height: 2; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; word-wrap: break-word; white-space: normal !important; }
+.btn-primary { background-color: #fcd55a; color: #121113; border: 2px solid #fcd55a; }
+.btn-primary:hover { background-color: #efbf25; color: #121113; border: 2px solid #efbf25; }
+.btn-primary.focus, .btn-primary:focus { background-color: #efbf25; color: #121113; border: 2px solid #efbf25; box-shadow: 0 0 0 0.2rem rgba(239, 191, 37, .5); color: #121113; }
+.btn-default { background-color: #3d0f82; color: #fff; border: 2px solid #3d0f82; }
+.btn-default:hover { background-color: transparent; color: #3d0f82; border: 2px solid #3d0f82; }
+.btn-default.focus, .btn-default:focus { background-color: transparent; color: #3d0f82; border: 1px solid #3d0f82; }
+
+.btn-lg { padding: 16px 45px; font-size: 18px; }
+.btn-sm { padding: 10px 34px; font-size: 14px; }
+.btn-xs { padding: 10px 24px; font-size: 12px; }
+.btn-white { color: #121113; background: #fff; }
+.btn-white:hover { background-color: #fff; color: #121113; }
+.btn-white.focus, .btn-white:focus { background-color: #fff; color: #121113; }
+.btn-white-outline { color: #fff; background: transparent; border: 2px solid #fff; }
+.btn-white-outline:hover { background-color: #fff; color: #161718; }
+.btn-white-outline.focus, .btn-white-outline:focus { background-color: #fff; color: #161718; }
+.btn-link { color: #121113; font-size: 14px; font-weight: 800; text-transform: capitalize; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; position: relative; letter-spacing: 0px; }
+.btn-link i { font-size: 14px; padding-left: 10px; }
+.btn-link:hover { color: #3d0f82; text-decoration: none; }
+.btn-link:hover i { color: #3d0f82; text-decoration: none; }
+button.btn { margin-right: -1px; }
+
+/*-----------------------------------
+   4. General / Elements 
+-----------------------------------*/
+
+/*----------------------- 
+   4.1 Section space :
+-------------------------*/
+
+/*Note: Section space help to create top bottom space;*/
+
+.space-small { padding-top: 60px; padding-bottom: 60px; }
+.space-medium { padding-top: 100px; padding-bottom: 100px; }
+.space-large { padding-top: 140px; padding-bottom: 140px; }
+.space-ex-large { padding-top: 160px; padding-bottom: 160px; }
+.content { padding-top: 80px; padding-bottom: 80px; }
+
+/*----------------------
+  4.2 Margin Space
+-----------------------*/
+.ml30 { margin-left: 30px; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }
+.mb35 { margin-bottom: 35px; }
+.mb40 { margin-bottom: 40px; }
+.mb60 { margin-bottom: 60px; }
+.mb80 { margin-bottom: 80px; }
+.mb100 { margin-bottom: 100px; }
+.mb130 { margin-bottom: 130px; }
+.mt0 { margin-top: 0px; }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt40 { margin-top: 40px; }
+.mt60 { margin-top: 60px; }
+.mt70 { margin-top: 70px; }
+.mt80 { margin-top: 80px; }
+.mt100 { margin-top: 100px; }
+
+/*----- less margin space from top --*/
+.mt-20 { margin-top: -20px; }
+.mt-40 { margin-top: -40px; }
+.mt-60 { margin-top: -60px; }
+.mt-80 { margin-top: -80px; }
+
+/*-----------------------
+  4.3 Padding space
+-------------------------*/
+.nopadding { padding: 0px; }
+.nopr { padding-right: 0px; }
+.nopl { padding-left: 0px; }
+.pinside10 { padding: 10px; }
+.pinside20 { padding: 20px; }
+.pinside30 { padding: 30px; }
+.pinside40 { padding: 40px; }
+.pinside50 { padding: 50px; }
+.pinside60 { padding: 60px; }
+.pinside80 { padding: 80px; }
+.pinside130 { padding: 130px; }
+.pdt10 { padding-top: 10px; }
+.pdt20 { padding-top: 20px; }
+.pdt30 { padding-top: 30px; }
+.pdt40 { padding-top: 40px; }
+.pdt60 { padding-top: 60px; }
+.pdt80 { padding-top: 80px; }
+.pdb10 { padding-bottom: 10px; }
+.pdb20 { padding-bottom: 20px; }
+.pdb30 { padding-bottom: 30px; }
+.pdb40 { padding-bottom: 40px; }
+.pdb60 { padding-bottom: 60px; }
+.pdb80 { padding-bottom: 80px; }
+.pdb150 { padding-bottom: 150px; }
+.pdl10 { padding-left: 10px; }
+.pdl20 { padding-left: 20px; }
+.pdl30 { padding-left: 30px; }
+.pdl40 { padding-left: 40px; }
+.pdl60 { padding-left: 60px; }
+.pdl80 { padding-left: 80px; }
+.pdr10 { padding-right: 10px; }
+.pdr20 { padding-right: 20px; }
+.pdr30 { padding-right: 30px; }
+.pdr40 { padding-right: 40px; }
+.pdr60 { padding-right: 60px; }
+.pdr80 { padding-right: 80px; }
+.pdtb40 { padding-bottom: 40px; padding-top: 40px; }
+
+/*--------------------------------
+4.4 Background & Block color 
+----------------------------------*/
+.bg-light { background-color: #fffcf7 !important; }
+.bg-line { background-color: #fff; border: 60px solid #e9ebef; padding-top: 80px; padding-bottom: 80px; }
+.bg-primary { background-color: #ffcd00; }
+.bg-default { background-color: #3d0f82; }
+
+.section-title { margin-bottom: 50px; text-align: center; }
+.title { color: #121113; }
+.title-bold { font-weight: 700; }
+
+.text-default { color: #304496; }
+.text-primary { color: #e6cc2c; }
+.text-green { color: #43cf22; }
+.text-black { color: #121113; }
+.text-yellow { color: #ff9000; }
+.text-secondary { color: #575a65; }
+.text-light { color: #f4f4f6; }
+
+.well-block { background-color: transparent; padding: 55px 45px; margin-bottom: 30px; border: 1px solid #dedbe3; border-radius: 8px; }
+.well-bg-block { background-color: #fffbf4; padding: 40px 40px 20px 40px; margin-bottom: 30px; border: 1px solid #e2ded8; border-radius: 8px; }
+.divider-line { border-bottom: 1px solid #eee; margin-top: 30px; margin-bottom: 30px; }
+.bg-box { background-color: #eff6f5; padding: 40px; }
+
+/*--------------------------------
+4.5 Features Block 
+----------------------------------*/
+
+
+/*--- Feature left  class ---*/
+.feature-left { border-bottom: 1px solid #dedbe3; padding-bottom: 45px; margin-bottom: 40px; }
+.feature-left .feature-icon { display: inline-block; padding-right: 35px; }
+.feature-left .feature-content { display: inline-block; }
+.feature-left:last-child { border-bottom: transparent; padding-bottom: 0px; margin-bottom: 0px; }
+
+
+/*--------------------------------
+4.6 Bullet/arrow
+----------------------------------*/
+.arrow { position: relative; }
+.arrow li { padding-left: 15px; line-height: 30px; }
+.arrow li:before { font-family: "FontAwesome"; display: inline-block; position: absolute; left: 0; font-size: 14px; color: #36333c; content: '\f058'; }
+.angle { position: relative; }
+.angle li { padding-left: 15px; line-height: 30px; }
+.angle li:before { font-family: "FontAwesome"; display: inline-block; position: absolute; left: 0; font-size: 14px; color: #36333c; content: '\f105'; }
+.star { position: relative; }
+.star li { padding-left: 22px; line-height: 30px; font-size: 14px; }
+.star li:before { font-family: "FontAwesome"; display: inline-block; position: absolute; left: 0; font-size: 14px; color: #36333c; content: '\f005'; }
+
+/*--------------------------------
+4.7 Call to actions 
+----------------------------------*/
+.newsletter-wrapper { padding-top: 120px; padding-bottom: 102px; color: #fff; }
+.newsletter-title { font-size: 44px; color: #fff; }
+.newsletter-wrapper .form-control { height: 64px; }
+.newsletter-wrapper .form-control:focus { color: #121113 !important; outline: 0; -webkit-box-shadow: none; box-shadow: none; border-color: #fcd55a; }
+.newsletter-wrapper input::-webkit-input-placeholder { color: #121113 !important; }
+.newsletter-btn { padding: 14px 44px; position: relative; border-top-left-radius: 0px; border-bottom-left-radius: 0px; right: 3px; }
+
+.widget-form { background-color: #3d0f82; padding: 40px; border-radius: 8px; margin-bottom: 30px; }
+.widget-form .form-group { margin-bottom: 15px; }
+.widget-form .form-control { margin-bottom: 0px; }
+.widget-map { border-radius: 8px; }
+.widget-primary { background-color: #fcd55a; padding: 40px 40px 20px; border-radius: 8px; margin-bottom: 30px; }
+.widget-primary-title { color: #121113; font-size: 28px; font-weight: 400; text-transform: capitalize; margin-bottom: 25px; }
+.widget-default { text-align: center; background-color: #3d0f82; padding: 40px 30px; border-radius: 8px; margin-bottom: 30px; color: #b4aac2; }
+.widget-default-title { color: #fff; font-size: 24px; font-weight: 300; text-transform: capitalize; margin-bottom: 15px; }
+.question-icon { margin-bottom: 30px; }
+
+/*--------------------------------
+4.8 Image Hover Effect 
+----------------------------------*/
+img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border: none; line-height: normal; vertical-align: middle; }
+.imghover { display: block; position: relative; max-width: 100%; }
+.imghover::before, .imghover::after { display: block; position: absolute; content: ""; text-align: center; opacity: 0; border-radius: 6px; }
+.imghover::before { top: 0; right: 0; bottom: 0; left: 0; }
+.imghover::after { top: 50%; left: 50%; padding: 10px; line-height: 10px; margin: -25px 0 0 -25px; content: ""; font-family: "FontAwesome"; font-size: 30px; }
+.imghover:hover::before, .imghover:hover::after { opacity: 1; }
+.imghover:hover::before { background: rgba(61, 15, 130, .70); }
+.imghover:hover::after { color: #fff; }
+.rounded { border-radius: 8px !important; }.tour-block { padding-top: 70px; }
+
+.tour-img img { border-radius: 6px; width: 100%; }
