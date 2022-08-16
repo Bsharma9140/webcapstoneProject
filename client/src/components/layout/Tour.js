@@ -3,7 +3,38 @@ import './Tour.css';
 import info1 from "../../assets/info1.png";
 import info2 from "../../assets/info2.png";
 import info3 from "../../assets/info3.png";
+import Destination1 from "../../images/singapore1.jpg";
+import Destination2 from "../../images/maldives1.jpg";
+import Destination3 from "../../images/newyork1.jpg";
+
 import styled from "styled-components";
+
+const data = [
+  {
+    image: Destination1,
+    title: "Singapore",
+    subTitle: "Singapore, officialy thr Republic of Singapore, is a",
+    cost: "38,800",
+    duration: "4 Nights / 3 days",
+    link:"/tour1"
+  },
+  {
+    image: Destination2,
+    title: "Thailand",
+    subTitle: "Thailand is a Southeast Asia country. It's known for",
+    cost: "54,200",
+    duration: "3 Nights / 4 days",
+    link:"/tour2"
+  },
+  {
+    image: Destination3,
+    title: "Paris",
+    subTitle: "Paris, France's capital, is a major European city and a",
+    cost: "45,500",
+    duration: "3 Nights / 4 days",
+    link: "/tour3"
+  }
+];
 
 class Tour extends Component {
     render() {
@@ -85,76 +116,30 @@ class Tour extends Component {
           
     <Section id="recommend">
          <center><h1>Tour Packages</h1></center>
-        
-         <div class="container">
-           
-            <div class="flex">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                
-                   <div class="destination-block">
-                            <div class="desti-img">
-                            <img src={require("../../images/singapore1.jpg")}alt=""></img>
-                                <a href="#" class="desti-title">Singapore</a>
-                                <div class="overlay">
-                                </div>
-                                <div class="text">
-                                    <h3 class="mb20 text-white">Singapore</h3>
-                                    <ul class="angle list-none">
-                                        <li>4 Nights / 3 days</li>
-                                        <li>3 Star hotel</li>
-                                        <li>Breakfast and Dinner</li>
-                                    </ul>
-                                    <p class="price">$1599</p>
-                                    <a href="/tour1" class="btn-link">Go for Singapore <i class="fa fa-angle-right"></i></a></div>
-                            </div>
-                        </div>
-                   
+        <div class="destinations">
+        {data.map((destination) => {
+              return (
+                <div className="destination">
+                  <img src={destination.image} alt="" />
+                  <h3>{destination.title}</h3>
+                  <p>{destination.subTitle}</p>
+                  <div className="info">
+                    <div className="services">
+                      <img src={info1} alt="" />
+                      <img src={info2} alt="" />
+                      <img src={info3} alt="" />
+                    </div>
+                    <h4>{destination.cost}</h4>
+                  </div>
+                  <div className="distance">
+                    <span><a href={destination.link} class="btn-link">Go for {destination.title} <i class="fa fa-angle-right"></i></a></span>
+                    <span>{destination.duration}</span>
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    
-                   <div class="destination-block">
-                            <div class="desti-img">
-                            <img src={require("../../images/maldives1.jpg")}alt=""></img>
-                                <a href="#" class="desti-title">Maldives</a>
-                                <div class="overlay">
-                                </div>
-                                <div class="text">
-                                    <h3 class="mb20 text-white">Maldives</h3>
-                                    <ul class="angle list-none">
-                                        <li>3 Nights / 4 days</li>
-                                        <li>3 Star hotel</li>
-                                        <li>Breakfast and Dinner</li>
-                                    </ul>
-                                    <p class="price">$1499</p>
-                                    <a href="/tour2" class="btn-link">Go for Maldives <i class="fa fa-angle-right"></i></a></div>
-                            </div>
-                        </div>
-                    
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    
-                   <div class="destination-block">
-                            <div class="desti-img">
-                            <img src={require("../../images/newyork1.jpg")}alt=""></img>
-                                <a href="#" class="desti-title">New York</a>
-                                <div class="overlay">
-                                </div>
-                                <div class="text">
-                                    <h3 class="mb20 text-white">New York</h3>
-                                    <ul class="angle list-none">
-                                        <li>3 Nights / 4 days</li>
-                                        <li>3 Star hotel</li>
-                                        <li>Breakfast and Dinner</li>
-                                    </ul>
-                                    <p class="price">$1899</p>
-                                    <a href="/tour3" class="btn-link">Go for Newyork <i class="fa fa-angle-right"></i></a></div>
-                            </div>
-                        </div>
-                    
-                </div>
-              
-            </div>
+              );
+            })}
         </div>
+         
    
     </Section>
   </main>

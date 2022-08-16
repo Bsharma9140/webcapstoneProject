@@ -16,6 +16,10 @@ import Recommend from "./components/layout/Recommend";
 import './App.css';
 import Hotels from "./components/layout/Hotels";
 import Tour from "./components/layout/Tour";
+import Tour1 from "./components/layout/tour1";
+import Tour2 from "./components/layout/tour2";
+import Tour3 from "./components/layout/tour3";
+import HotelsDetail from "./components/layout/HotelsDetail";
 import Checkout from "./components/layout/Checkout";
 class App extends Component {
 
@@ -33,9 +37,13 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/tour" component={Tour} />
+            <Route exact path="/tour1" component={Tour1} />
+            <Route exact path="/tour2" component={Tour2} />
+            <Route exact path="/tour3" component={Tour3} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/hotels" component={Hotels} />
+            <Route exact path="/hotelsdetail/:id" component={HotelsDetail} />
             <Route exact path="/checkout" component={Checkout} /> 
             { (pathname==='/home' || pathname==='/')?
             <><Services />

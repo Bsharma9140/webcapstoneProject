@@ -28,4 +28,4 @@ var hotelSchema = new mongoose.Schema({
    
 });
 
-mongoose.model('Hotel', hotelSchema, 'Hotels');
+module.exports = Hotel = mongoose.model('Hotel', hotelSchema);
