@@ -1,11 +1,12 @@
-import { SET_CURRENT_USER, USER_LOADING } from "../actions/types";
+import { SET_CURRENT_USER, USER_LOADING, GET_HOTELS } from "../actions/types";
 
 const isEmpty = require("is-empty");
 
 const initialState = {
   isAuthenticated: false,
   user: {},
-  loading: false
+  loading: false,
+  hotels: []
 };
 
 export default function(state = initialState, action) {
@@ -21,6 +22,12 @@ export default function(state = initialState, action) {
         ...state,
         loading: true
       };
+      case GET_HOTELS:
+        return {
+            ...state,
+            hotels:action.payload
+
+        };
     default:
       return state;
   }

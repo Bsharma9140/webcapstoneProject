@@ -15,24 +15,6 @@ class Checkout extends Component {
                     <h1>Checkout</h1>
 
                     <div class="row">
-                        <div class="col-12 col">
-                            <div class="info-bar">
-                                <p>
-                                    <i class="fa fa-info"></i>
-                                    Have a coupon? <a href="#">Click here to enter your code</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col coupon">
-                            <form method="get">
-                                <input type="text" name="coupon" id="coupon" placeholder="Coupon code" />
-                                <input type="submit" name="submit" value="Apply Coupon" />
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row">
                         <form method="get">
                             <div class="col-7 col">
                                 <h3 class="topborder"><span>Billing Details</span></h3>
@@ -91,10 +73,10 @@ class Checkout extends Component {
                                 <textarea name="notes" id="notes" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
                             </div>
                             <div class="col-5 col order">
-                                <h3 ><span>Your Order</span></h3>
+                                {/* <h3 ><span>Your Order</span></h3> */}
                                 <img class="img-adjust" src={require("../../images/check.jpg")} alt="hotel/tour image" height={450}
                                     width={400}></img>
-                                <div class="row">
+                                {/* <div class="row">
                                     <h4 class="inline">Room/Tour Details</h4>
 
                                 </div>
@@ -104,8 +86,9 @@ class Checkout extends Component {
                                 </div>
                                 <div><h5>Rate</h5></div>
 
-                                <div><h5>Total Amount</h5></div>
+                                <div><h5>Total Amount</h5></div> */}
 
+                              
                                 <div>
                                     <h3 class="topborder"><span>Payment Method</span></h3>
                                     <input type="radio" value="banktransfer" name="payment" checked /><p>Direct Bank Transfer</p>
@@ -117,6 +100,15 @@ class Checkout extends Component {
                                 <div><input type="radio" value="cheque" name="payment" /><p>Cheque Payment</p></div>
                                 <div>
                                     <input type="radio" value="card" name="payment" /><p>Card</p>
+                                    
+                                      <form>
+                                    <input type="text" placeholder="Card Number" class="card"></input>
+                                    <input type="text" placeholder="Name on card"></input>
+                                    {/* <div class="half"> */}
+                                    <input type="text" placeholder="MM/YY"></input>
+                                    <input type="text" placeholder="CVC"></input>
+                                    {/* </div>   */}
+                                </form>
 
                                 </div>
                                 <input type="submit" name="submit" value="Place Order" class="redbutton" />

@@ -38,9 +38,7 @@ export default function Navbar() {
           <li>
             <a href="/contact">CONTACT</a>
           </li>
-          <li>
-            <a href="/checkout">CHECKOUT</a>
-          </li>
+          
           
         </ul>
         <ul>
@@ -75,11 +73,7 @@ export default function Navbar() {
               Contact
             </a>
           </li>
-          <li>
-            <a href="/checkout" onClick={() => setNavbarState(false)}>
-              Checkout
-            </a>
-          </li>
+          
         </ul>
       </ResponsiveNav>
     </>

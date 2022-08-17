@@ -124,6 +124,9 @@ const Section = styled.section`
       }
       h3 {
         letter-spacing: 0.1rem;
+        font-family: VNFGothamBold,Helvetica,Arial,sans-serif;
+        font-size: 24px;
+        font-weight: bold;
       }
       p {
         font-family: VNFGothamBold,Helvetica,Arial,sans-serif;

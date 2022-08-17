@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Component} from "react";
 import styled from "styled-components";
 import Destination1 from "../../assets/Destination1.png";
 import Destination2 from "../../assets/Destination2.png";
@@ -10,112 +10,141 @@ import info1 from "../../assets/info1.png";
 import info2 from "../../assets/info2.png";
 import info3 from "../../assets/info3.png";
 import './Hotels.css';
+import { getHotels } from "../../actions/authActions";
+import {  withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-export default function Hotels() {
-  const data = [
-    {
-      image: Destination1,
-      title: "The Hilton",
-      subTitle: "Singapore, officialy thr Republic of Singapore, is a",
-      cost: "38,800",
-      duration: "Approx 2 night trip",
-    },
-    {
-      image: Destination2,
-      title: "The Ramada",
-      subTitle: "Thailand is a Southeast Asia country. It's known for",
-      cost: "54,200",
-      duration: "Approx 2 night trip",
-    },
-    {
-      image: Destination3,
-      title: "The Crown",
-      subTitle: "Paris, France's capital, is a major European city and a",
-      cost: "45,500",
-      duration: "Approx 2 night trip",
-    },
-    {
-      image: Destination4,
-      title: "The Hilton",
-      subTitle: "New Zealand is an island country in the",
-      cost: "24,100",
-      duration: "Approx 1 night trip",
-    },
-    {
-      image: Destination5,
-      title: "Radisson",
-      subTitle: "Bora Bora is a small South Pacific island northwest of",
-      cost: "95,400",
-      duration: "Approx 2 night 2 day trip",
-    },
-    {
-      image: Destination6,
-      title: "The Marriott",
-      subTitle: "London, the capital of England and the United",
-      cost: "38,800",
-      duration: "Approx 3 night 2 day trip",
-    },
-  ];
+const data = [
+  {
+    image: Destination1,
+    title: "The Hilton",
+    subTitle: "Singapore, officialy thr Republic of Singapore, is a",
+    cost: "38,800",
+    duration: "Approx 2 night trip",
+    href:"/hotelsDetail/1"
+  },
+  {
+    image: Destination2,
+    title: "The Ramada",
+    subTitle: "Thailand is a Southeast Asia country. It's known for",
+    cost: "54,200",
+    duration: "Approx 2 night trip",
+    href:"/hotelsDetail/2"
+  },
+  {
+    image: Destination3,
+    title: "The Crown",
+    subTitle: "Paris, France's capital, is a major European city and a",
+    cost: "45,500",
+    duration: "Approx 2 night trip",
+    href:"/hotelsDetail/3"
+  },
+  {
+    image: Destination4,
+    title: "The Hilton",
+    subTitle: "New Zealand is an island country in the",
+    cost: "24,100",
+    duration: "Approx 1 night trip",
+    href:"/hotelsDetail/4"
+  },
+  {
+    image: Destination5,
+    title: "Radisson",
+    subTitle: "Bora Bora is a small South Pacific island northwest of",
+    cost: "95,400",
+    duration: "Approx 2 night 2 day trip",
+    href:"/hotelsDetail/5"
+  },
+  {
+    image: Destination6,
+    title: "The Marriott",
+    subTitle: "London, the capital of England and the United",
+    cost: "38,800",
+    duration: "Approx 3 night 2 day trip",
+    href:"/hotelsDetail/6"
+  },
+];
 
-  const packages = [
-    "Greece",
-    "Paris",
-    "New York",
-    "London",
-  ];
+class Hotels extends Component  {
+  constructor() {
+    super();
+    this.state = {
+      
+      errors: {}
+    };
+  }
+  
+  componentDidMount() {
+      this.props.getHotels();
+  }
 
-  const [active, setActive] = useState(1);
-  return (
-    <div>
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
+  }
 
-      <div className="backgroundHotel">
-        <img src={require("../../images/pexels-pixabay-258154.jpg")} alt="" />
-      </div>
-      <Section id="recommend">
-        <div className="title">
-          <h2>Hotels</h2>
+  render(){
+    return (
+      <div>
+  
+        <div className="backgroundHotel">
+          <img src={require("../../images/pexels-pixabay-258154.jpg")} alt="" />
         </div>
-        <div className="packages">
-          <ul>
-            {packages.map((pkg, index) => {
+        <Section id="recommend">
+          <div className="title">
+            <h2>Hotels</h2>
+          </div>
+         
+          <div className="destinations">
+            {data.map((destination) => {
               return (
-                <li
-                  className={active === index + 1 ? "active" : ""}
-                  onClick={() => setActive(index + 1)}
-                >
-                  {pkg}
-                </li>
+                <div className="destination">
+                  <img src={destination.image} alt="" />
+                  <h3>{destination.title}</h3>
+                  <p>{destination.subTitle}</p>
+                  <div className="info">
+                    <div className="services">
+                      <img src={info1} alt="" />
+                      <img src={info2} alt="" />
+                      <img src={info3} alt="" />
+                    </div>
+                    <h4>{destination.cost}</h4>
+                  </div>
+                  <div className="distance">
+                    <span>1000 Kms</span>
+                    <span>{destination.duration}</span>
+                    <span><a href={destination.href}>Select</a></span>
+                  </div>
+                </div>
               );
             })}
-          </ul>
-        </div>
-        <div className="destinations">
-          {data.map((destination) => {
-            return (
-              <div className="destination">
-                <img src={destination.image} alt="" />
-                <h3>{destination.title}</h3>
-                <p>{destination.subTitle}</p>
-                <div className="info">
-                  <div className="services">
-                    <img src={info1} alt="" />
-                    <img src={info2} alt="" />
-                    <img src={info3} alt="" />
-                  </div>
-                  <h4>{destination.cost}</h4>
-                </div>
-                <div className="distance">
-                  <span>1000 Kms</span>
-                  <span>{destination.duration}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </Section>
-    </div>
-  );
+          </div>
+        </Section>
+      </div>);
+    }
+  
+  
 }
+
+Hotels.propTypes = {
+ getHotels: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  //auth: state.auth,
+  //errors: state.errors
+});
+
+export default connect(
+  mapStateToProps,
+  { getHotels }
+)(withRouter(Hotels));
 
 const Section = styled.section`
   padding: 2rem 0;
@@ -179,6 +208,9 @@ const Section = styled.section`
       .distance {
         display: flex;
         justify-content: space-between;
+        a {
+          color: black;
+        }
       }
     }
   }

@@ -1,0 +1,80 @@
+{
+    "hotel" : [{
+        "id": "1",
+        "image1": "../../images/hotel1.jpg",
+        "image2": "../../images/hotel2.jpg",
+        "image3": "../../images/hotel3.jpg",
+        "image4": "../../images/hotel4.jpg",
+        "image5": "../../images/hotel5.jpg",
+        "description": "Hilton Worldwide Holdings Inc., formerly Hilton Hotels Corporation, is an American multinational hospitality company that manages and franchises a broad portfolio of hotels and resorts.",
+        "name": "The Hilton",
+        "price": "95,400",
+        "perDay": "Approx 2 night 2 day trip",
+        "href":"/checkout/1"
+    },
+    {
+        "id": "2",
+        "image1": "../../images/hotel6.jpg",
+        "image2": "../../images/hotel7.jpg",
+        "image3": "../../images/hotel8.jpg",
+        "image4": "../../images/hotel9.jpg",
+        "image5": "../../images/hotel10.jpg",
+        "description": "Ramada hotels offers best available rates, breakfast and free wifi. Book today and save with Wyndham Rewards, the award-winning hotel rewards program.",
+        "name": "The Ramada",
+        "price": "95,400",
+        "perDay": "Approx 2 night 2 day trip",
+        "href":"/checkout/2"
+    },
+    {
+        "id": "3",
+        "image1": "../../images/hotel12.jpg",
+        "image2": "../../images/hotel11.jpg",
+        "image3": "../../images/hotel1.jpg",
+        "image4": "../../images/hotel2.jpg",
+        "image5": "../../images/hotel3.jpg",
+        "description": "Within 2 km of Niagara Falls, this classy hotel inside the Falls Avenue Entertainment Resort is also 5 km from Marineland amusement park",
+        "name": "The Crown",
+        "price": "95,400",
+        "perDay": "Approx 2 night 2 day trip",
+        "href":"/checkout/3"
+    },
+    {
+        "id": "4",
+        "image1": "../../images/hotel4.jpg",
+        "image2": "../../images/hotel5.jpg",
+        "image3": "../../images/hotel6.jpg",
+        "image4": "../../images/hotel7.jpg",
+        "image5": "../../images/hotel8.jpg",
+        "description": "Hilton Worldwide Holdings Inc., formerly Hilton Hotels Corporation, is an American multinational hospitality company that manages and franchises a broad portfolio of hotels and resorts.",
+        "name": "The Hilton",
+        "price": "95,400",
+        "perDay": "Approx 2 night 2 day trip",
+        "href":"/checkout/4"
+    },
+    {
+        "id": "5",
+        "image1": "../../images/hotel9.jpg",
+        "image2": "../../images/hotel10.jpg",
+        "image3": "../../images/hotel11.jpg",
+        "image4": "../../images/hotel12.jpg",
+        "image5": "../../images/hotel1.jpg",
+        "description": "Radisson Hotels is an international hotel-chain headquartered in the United States. A division of the Radisson Hotel Group, it operates the brands Radisson Blu, Radisson RED, Radisson Collection, Country Inn & Suites, and Park Inn by Radisson, among others.",
+        "name": "Radisson",
+        "price": "95,400",
+        "perDay": "Approx 2 night 2 day trip",
+        "href":"/checkout/5"
+    },
+    {
+        "id": "6",
+        "image1": "../../images/hotel1.jpg",
+        "image2": "../../images/hotel2.jpg",
+        "image3": "../../images/hotel3.jpg",
+        "image4": "../../images/hotel4.jpg",
+        "image5": "../../images/hotel5.jpg",
+        "description": "Marriott International, Inc. is an American multinational company that operates, franchises, and licenses lodging including hotel, residential, and timeshare properties. It is headquartered in Bethesda, Maryland.",
+        "name": "The Marriott ",
+        "price": "95,400",
+        "perDay": "Approx 2 night 2 day trip",
+        "href":"/checkout/6"
+    }]
+}

@@ -2,7 +2,7 @@ import axios from "axios";
 import setAuthToken from "../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 
-import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
+import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING, GET_HOTELS } from "./types";
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
@@ -16,6 +16,22 @@ export const registerUser = (userData, history) => dispatch => {
       })
     );
 };
+
+export const getHotels = () =>  dispatch => {
+  axios
+  .get(`/api/hotels`)
+  .then(res =>   dispatch({
+    type: GET_HOTELS,
+    payload: res.data
+  }))
+  .catch(err =>
+    dispatch({
+      type: GET_ERRORS,
+      payload: err.data || null
+    })
+  );
+
+}
 
 // Login - get user token
 export const loginUser = userData => dispatch => {

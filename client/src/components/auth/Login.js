@@ -58,19 +58,19 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
-      <div>
+      <div class="loginClass">
 
-        <div className="background1">
+        <div className="backgroundLogin">
           <img src={require("../../images/pexels-frans-van-heerden-625409.jpg")} alt="" />
         </div>
         <main>
 
-          <div class="form_content1">
+          <div class="form_contentLogin">
             <div class="left box">
 
             </div>
-            <div class="right box">
-              <div style={{ marginTop: "4rem" }} className="row">
+            <div class="right1 box">
+              <div >
 
                 <div class="custom-link1">
                 <Link to="/home">Back to Home</Link>
@@ -115,6 +115,7 @@ class Login extends Component {
                         {errors.password}
                         {errors.passwordincorrect}
                       </span>
+                      
                     </div>
                     
                       <button
