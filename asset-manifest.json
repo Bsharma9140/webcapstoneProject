@@ -1,7 +1,7 @@
 {
-  "main.css": "/webcapstoneProject/static/css/main.ac926fc7.chunk.css",
-  "main.js": "/webcapstoneProject/static/js/main.93519229.chunk.js",
-  "main.js.map": "/webcapstoneProject/static/js/main.93519229.chunk.js.map",
+  "main.css": "/webcapstoneProject/static/css/main.d1d33299.chunk.css",
+  "main.js": "/webcapstoneProject/static/js/main.62b7c65e.chunk.js",
+  "main.js.map": "/webcapstoneProject/static/js/main.62b7c65e.chunk.js.map",
   "static/js/1.6b47cd73.chunk.js": "/webcapstoneProject/static/js/1.6b47cd73.chunk.js",
   "static/js/1.6b47cd73.chunk.js.map": "/webcapstoneProject/static/js/1.6b47cd73.chunk.js.map",
   "runtime~main.js": "/webcapstoneProject/static/js/runtime~main.e420b005.js",
@@ -59,8 +59,8 @@
   "static/media/hotel5.jpg": "/webcapstoneProject/static/media/hotel5.ea938eb8.jpg",
   "static/media/checkout.jpg": "/webcapstoneProject/static/media/checkout.a3728a79.jpg",
   "static/media/check.jpg": "/webcapstoneProject/static/media/check.5c8b043c.jpg",
-  "static/css/main.ac926fc7.chunk.css.map": "/webcapstoneProject/static/css/main.ac926fc7.chunk.css.map",
+  "static/css/main.d1d33299.chunk.css.map": "/webcapstoneProject/static/css/main.d1d33299.chunk.css.map",
   "index.html": "/webcapstoneProject/index.html",
-  "precache-manifest.86c7f590c5ff7e86125f0c8d9f3494f7.js": "/webcapstoneProject/precache-manifest.86c7f590c5ff7e86125f0c8d9f3494f7.js",
+  "precache-manifest.9689a98c97649a02c0c73e6bbc41fb66.js": "/webcapstoneProject/precache-manifest.9689a98c97649a02c0c73e6bbc41fb66.js",
   "service-worker.js": "/webcapstoneProject/service-worker.js"
 }
