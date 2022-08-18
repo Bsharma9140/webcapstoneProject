@@ -4,6 +4,8 @@
   "description": "Mern Auth Example",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -26,6 +28,7 @@
     "bootstrap": "^5.2.0",
     "concurrently": "^4.0.1",
     "express": "^4.16.4",
+    "gh-pages": "^4.0.0",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.3.11",

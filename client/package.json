@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "gh-pages": "^4.0.0",
     "jwt-decode": "^2.2.0",
     "mern-auth": "file:..",
     "react": "^16.6.3",
@@ -18,11 +19,14 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://bsharma9140.github.io/webcapstoneProject/",
   "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
