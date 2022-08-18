@@ -48,13 +48,7 @@ const Section = styled.section`
       filter: brightness(60%);
       border-radius: 2rem;
     }
-    video{
-      
-        width: 100%;
-        filter: brightness(60%);
-        border-radius: 2rem;
-     
-    }
+    
   }
   .content {
     height: 100%;
@@ -86,7 +80,7 @@ const Section = styled.section`
       display: flex;
       background-color: #ffffffce;
       padding: 0.5rem;
-      height: 80px;
+      height: 90px;
       border-radius: 0.5rem;
       .container {
         display: flex;
@@ -127,7 +121,7 @@ const Section = styled.section`
         border: 2px solid #FC5B62;
         font-size: 1.1rem;
         text-transform: uppercase;
-        height: 60px;
+        height: 75px;
         transition: 0.3s ease-in-out;
         &:hover {
           background-color: black;

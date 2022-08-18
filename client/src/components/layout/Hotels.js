@@ -208,6 +208,9 @@ const Section = styled.section`
       .distance {
         display: flex;
         justify-content: space-between;
+        a {
+          color: black;
+        }
       }
     }
   }

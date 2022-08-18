@@ -20,16 +20,16 @@ const data = [
   },
   {
     image: Destination2,
-    title: "Thailand",
-    subTitle: "Thailand is a Southeast Asia country. It's known for",
+    title: "Maldives",
+    subTitle: "Maldives lies southwest of Sri Lanka and India, about 750 kilometres",
     cost: "54,200",
     duration: "3 Nights / 4 days",
     link:"/tour2"
   },
   {
     image: Destination3,
-    title: "Paris",
-    subTitle: "Paris, France's capital, is a major European city and a",
+    title: "New York",
+    subTitle: "New York City is a global cultural, financial, and media center with a",
     cost: "45,500",
     duration: "3 Nights / 4 days",
     link: "/tour3"

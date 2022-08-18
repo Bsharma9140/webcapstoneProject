@@ -63,6 +63,9 @@ const Section = styled.section`
     background-color: #FC5B6215;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s ease-in-out;
+    h3 {
+      
+    }
     p {
       text-align: justify;
       font-size: 14px;

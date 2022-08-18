@@ -1,16 +1,16 @@
 .backgroundHotel {
   
-    margin-top: 2rem;
- }
- .backgroundHotel img {
-       width: 100%;
-       height: 70vh;
-       filter: brightness(90%);
-       border-radius: 2rem;
- }
- backgroundHotelDetail img{
-      width: 100%;
-      height: 70vh;
-      filter: brightness(90%);
-      border-radius: 2rem;
- }
+      margin-top: 2rem;
+   }
+   .backgroundHotel img {
+         width: 100%;
+         height: 70vh;
+         filter: brightness(90%);
+         border-radius: 2rem;
+   }
+   .backgroundHotelDetail img{
+        width: 100%;
+        height: 70vh;
+        filter: brightness(90%);
+        border-radius: 2rem;
+   }

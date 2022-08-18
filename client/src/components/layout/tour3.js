@@ -15,7 +15,7 @@ class Tour3 extends Component {
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="tour-caption">
                             <h1 class= "h1style">New York</h1>
-                            <p class="newdata"><strong class="tour-rate">$1899</strong>( 3 nights | 4 days )</p>
+                            <p class="newdata"><strong class="tour-rate">45,500</strong>( 3 nights | 4 days )</p>
                             <a href="/checkout" class="btn btn-primary mb10">Book Your Tour</a>
                             
                         </div>
